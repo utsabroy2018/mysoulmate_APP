@@ -276,8 +276,8 @@ export class User_portfolio_editComponent implements OnInit {
   selected:any;
 
   imageBaseUrl:any;
-  loded_single_img:any;
-  listOfFiles_single: any[] = [];
+  // loded_single_img:any;
+  // listOfFiles_single: any[] = [];
 
   dropdownList:any;
 
@@ -526,7 +526,7 @@ export class User_portfolio_editComponent implements OnInit {
         this.get_Family_DetailsDtls();
         this.get_GroomLocation_ProfInfoDtls();
         this.get_Hobbies_Dtls();
-        this.get_Single_Photo();
+        // this.get_Single_Photo();
         this.get_contact_details();
 
       // END //
@@ -1571,24 +1571,24 @@ onChangeState(event:any) {
     })
   }
 
-  get_Single_Photo(){
-    this.service.global_service(0, '/profile/profile_pic', `user_id=${this.localstorageDT.id}`).subscribe((data:any) => {
-      var responseData:any;
-      responseData = data;
-      responseData = responseData.suc > 0 ? atob(responseData.msg) : false
-      this.loded_single_img = JSON.parse(responseData);
+  // get_Single_Photo(){
+  //   this.service.global_service(0, '/profile/profile_pic', `user_id=${this.localstorageDT.id}`).subscribe((data:any) => {
+  //     var responseData:any;
+  //     responseData = data;
+  //     responseData = responseData.suc > 0 ? atob(responseData.msg) : false
+  //     this.loded_single_img = JSON.parse(responseData);
   
   
   
   
-        this.listOfFiles_single.length = 0
-        for(let dt of this.loded_single_img){
-          this.listOfFiles_single.push({id:dt.id, filePath: dt.file_path})
-        }
+  //       this.listOfFiles_single.length = 0
+  //       for(let dt of this.loded_single_img){
+  //         this.listOfFiles_single.push({id:dt.id, filePath: dt.file_path})
+  //       }
         
-      })
+  //     })
       
-  }
+  // }
 
 
 

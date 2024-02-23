@@ -329,6 +329,7 @@ export class HomeComponent implements OnInit {
         this.showExpairMsg = false;
         // this.resendOTP_Desable = false;
         clearInterval(this.timerInt);
+        this.getOTP = null;
       } else {
         this.showExpairMsg = true;
       }

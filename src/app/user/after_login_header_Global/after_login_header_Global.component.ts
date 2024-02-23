@@ -147,7 +147,7 @@ export class After_login_header_GlobalComponent implements OnInit {
      this.get_Family_DetailsDtls();
 
      this.imageBaseUrl = environment.api_url + '/uploads/';
-     this.get_Single_Photo();
+    //  this.get_Single_Photo();
 
   }
 
@@ -188,38 +188,38 @@ export class After_login_header_GlobalComponent implements OnInit {
       this.sds.setLocalSecrectData({user_country: this.userData_1.country_name})
 
       this.is_loader = false;
+      this.is_loader_Thum = false;
       })
   }
 
-  get_Single_Photo(){
-    this.is_loader_Thum = true;
-    this.service.global_service(0, '/profile/profile_pic', `user_id=${this.localstorageDT.id}`).subscribe((data:any) => {
-      var responseData:any;
-      responseData = data;
-      responseData = responseData.suc > 0 ? atob(responseData.msg) : false
-      this.loded_single_img = JSON.parse(responseData);
+  // get_Single_Photo(){
+  //   this.is_loader_Thum = true;
+  //   this.service.global_service(0, '/profile/profile_pic', `user_id=${this.localstorageDT.id}`).subscribe((data:any) => {
+  //     var responseData:any;
+  //     responseData = data;
+  //     responseData = responseData.suc > 0 ? atob(responseData.msg) : false
+  //     this.loded_single_img = JSON.parse(responseData);
   
   
-        this.listOfFiles_single.length = 0
-        for(let dt of this.loded_single_img){
-          // this.listOfFiles_single.push({id:dt.id, filePath: this.imageBaseUrl + dt.file_path})
-          this.listOfFiles_single.push({id:dt.id, filePath: dt.file_path})
-          this.is_loader_Thum = false;
-        }
+  //       this.listOfFiles_single.length = 0
+  //       for(let dt of this.loded_single_img){
+  //         // this.listOfFiles_single.push({id:dt.id, filePath: this.imageBaseUrl + dt.file_path})
+  //         this.listOfFiles_single.push({id:dt.id, filePath: dt.file_path})
+  //         this.is_loader_Thum = false;
+  //       }
         
-      })
+  //     })
       
-  }
+  // }
 
   subscriptionDetails(){
     this.service.global_service(0, '/subscription/get_subscription_dtls/', null).subscribe((data:any) => {
-      var responseData:any;
-      this.paymentDetails = JSON.parse(atob(data.msg));
-  
-      console.log(data, 'this.paymentDetails');
-      
-  
+      var responseData = data.suc;
+      if(responseData > 0){
+        this.paymentDetails = JSON.parse(atob(data.msg));
+      }
+
       })
   }
-
+  
 }

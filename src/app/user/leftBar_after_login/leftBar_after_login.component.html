@@ -409,8 +409,8 @@ here is ignored</div>
 					<li><i class="fa fa-minus-circle fa-2x " type="button" [hidden]="true" (click)="zoomOut()"></i></li>
 					<li> <i class="fa fa-plus-circle fa-2x " type="button" [hidden]="true" (click)="zoomIn()"></i></li>
 					<li> <button class="cropCloseBtn" (click)="close_modal_on_crop()"><span class="material-icons">cancel</span></button></li>
-
 				</ul>
+        
 				<image-cropper [hidden]="hide" [imageChangedEvent]="img_cover" [maintainAspectRatio]="true"
 					[containWithinAspectRatio]="contain_within_aspect_ratio" [aspectRatio]="3/2"
 					[onlyScaleDown]="false" [cropperMaxWidth]="550" [cropperMaxHeight]="650"

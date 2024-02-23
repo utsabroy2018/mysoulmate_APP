@@ -235,7 +235,7 @@ export class HeaderResponsiveComponent implements OnInit {
 
     this.imageBaseUrl = environment.api_url + '/uploads/';
     this.subscriptionDetails();
-    this.get_Single_Photo();
+    // this.get_Single_Photo();
     this.completeProfileProgress();
     this.getGalleryPhoto();
 
@@ -517,6 +517,7 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
       responseData = data;
       responseData = responseData.suc > 0 ? atob(responseData.msg) : false
       this.userData_1 = JSON.parse(responseData)[0]
+      this.is_loader_Thum = false;
 
       // localStorage.setItem("​​​profile_code", this.userData_1.profile_id);
       this.sds.setLocalSecrectData({​​​profile_code: this.userData_1.profile_id})
@@ -563,7 +564,7 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
   
     if(this.responGallery_single.suc > 0){
       this.msgService.successMsg('SU');
-      this.get_Single_Photo()
+      // this.get_Single_Photo();
     }
     
       
@@ -571,36 +572,32 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
   
   }
 
-  get_Single_Photo(){
+  // get_Single_Photo(){
    
 
-    this.is_loader_Thum = true;
-    this.service.global_service(0, '/profile/profile_pic', `user_id=${this.localstorageDT.id}`).subscribe((data:any) => {
-      var responseData:any;
-      responseData = data;
-      responseData = responseData.suc > 0 ? atob(responseData.msg) : false
+  //   this.is_loader_Thum = true;
+  //   this.service.global_service(0, '/profile/profile_pic', `user_id=${this.localstorageDT.id}`).subscribe((data:any) => {
+  //     var responseData:any;
+  //     responseData = data;
+  //     responseData = responseData.suc > 0 ? atob(responseData.msg) : false
       
-      this.loded_single_img = JSON.parse(responseData);
+  //     this.loded_single_img = JSON.parse(responseData);
   
   
       
   
   
-        this.listOfFiles_single.length = 0
-        for(let dt of this.loded_single_img){
-          // this.listOfFiles_single.push({id:dt.id, filePath: this.imageBaseUrl + dt.file_path})  afterLoginUserThum
-          this.listOfFiles_single.push({id:dt.id, filePath:  dt.file_path})
-        }
+  //       this.listOfFiles_single.length = 0
+  //       for(let dt of this.loded_single_img){
+  //         this.listOfFiles_single.push({id:dt.id, filePath:  dt.file_path})
+  //       }
 
-        this.is_loader_Thum = false;
+  //       this.is_loader_Thum = false;
    
-
-        //  Use Subject Behaibair For load time Show User Detail On the Header Start____________
-        this.service.afterLoginUserThumSend.next(this.listOfFiles_single[0].filePath);
-        //  Use Subject Behaibair For load time Show User Detail On the Header End____________
-      })
+  //       this.service.afterLoginUserThumSend.next(this.listOfFiles_single[0].filePath);
+  //     })
       
-  }
+  // }
 
 
    open_crop_modal() {
@@ -683,7 +680,7 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
 
         this.msgService.successMsg('SU');
        
-        this.get_Single_Photo()
+        // this.get_Single_Photo();
       this.el.style.display = "none";
 
       }
@@ -731,12 +728,11 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
 
   subscriptionDetails(){
     this.service.global_service(0, '/subscription/get_subscription_dtls/', null).subscribe((data:any) => {
-      var responseData:any;
-      this.paymentDetails = JSON.parse(atob(data.msg));
-  
-      console.log(data, 'this.paymentDetails');
-      
-  
+      var responseData = data.suc;
+      if(responseData > 0){
+        this.paymentDetails = JSON.parse(atob(data.msg));
+      }
+
       })
   }
 

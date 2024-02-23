@@ -36,6 +36,9 @@ successMsg(flag:any){
   if(flag=='ADD_WISHLIST'){
     this.snackBar.open('Added to wishlist', '×', { panelClass: 'success', verticalPosition: 'top', duration: 3000 });
   }
+  if(flag=='PHOTO_UP_CORECT'){
+    this.snackBar.open('Upload Successfully!', '×', { panelClass: 'success', verticalPosition: 'top', duration: 3000 });
+  }
 
 }
 errorMsg(flag:any){
@@ -78,6 +81,9 @@ errorMsg(flag:any){
   }
   if(flag=='DLT_WISHLIST'){
     this.snackBar.open('Removed from wishlist', '×', { panelClass: 'error', verticalPosition: 'top', duration: 3000 });
+  }
+  if(flag=='PHOTO_NOTUP_CORECT'){
+    this.snackBar.open('Please Upload Correct Format', '×', { panelClass: 'error', verticalPosition: 'top', duration: 3000 });
   }
 }
 globalError(msg:any){

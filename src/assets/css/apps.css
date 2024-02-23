@@ -82,6 +82,8 @@ a:hover {
 
 button{transition: all 0.3s;
   transition: all 500ms ease-in-out;}
+button:focus{border: none; outline:none;}
+
 img {
   max-width: 100%;
 }

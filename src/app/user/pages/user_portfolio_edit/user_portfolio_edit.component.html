@@ -35,11 +35,8 @@
 			<img [src]="listOfFiles_single[0]?.filePath" alt="" srcset="">
 			</ng-container> -->
 
-                  <ng-container *ngIf="
-                      listOfFiles_single[0]?.filePath !== null;
-                      else noThumbnail
-                    ">
-                    <img [src]="imageBaseUrl + listOfFiles_single[0]?.filePath" alt="" srcset="" />
+                  <ng-container *ngIf="user_basic_info_New?.file_path !== null; else noThumbnail ">
+                    <img [src]="imageBaseUrl + user_basic_info_New?.file_path" alt="" srcset="" />
                   </ng-container>
 
                   <ng-template #noThumbnail>
@@ -60,7 +57,7 @@
             </div>
             <div class="col-sm-10  personal_sumary_col_sm_10 personal_sumary_right float-left">
 
-
+              <!-- {{this.user_basic_info_New?.file_path | json}} -->
               
 
 

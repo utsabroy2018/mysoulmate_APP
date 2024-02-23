@@ -3056,6 +3056,13 @@ ul.msgServer li{margin: 0 0 5px 0;
     padding: 4px 5px;
     margin: 0 3px;}
 
+    .dialogBoxTitle{text-align: center;
+      font-size: 18px !important;
+      color: #333 !important;}
+  
+    .dialogBoxBtnGroup{text-align: center !important; justify-content:center !important;}
+    .dialogBoxBtnFill{background:#ff7c0b !important; color: #fff !important;}
+
     .wobble {
       -webkit-animation-name: wobble;
       animation-name: wobble;

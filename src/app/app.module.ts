@@ -28,12 +28,18 @@ import { PlatformModule } from '@angular/cdk/platform';
 // import {MatChipsModule} from '@angular/material/chips';
 // import { ScrollDirective } from './Directives/scroll.directive';
 // import {FileUploadModule} from 'primeng/fileupload';
+import { DialogBodyComponent } from './dialog-body/dialog-body.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon'; 
+import {MatDialogModule} from '@angular/material/dialog'
 
 //I keep the new line
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-  ],
+      DialogBodyComponent
+   ],
   imports: [
     BrowserModule,
     PlatformModule,
@@ -49,6 +55,9 @@ import { PlatformModule } from '@angular/cdk/platform';
     MatFormFieldModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDialogModule
     
   ],
   providers: [

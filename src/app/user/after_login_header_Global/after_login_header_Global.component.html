@@ -1,9 +1,8 @@
 <span class="loader smallLoader" *ngIf="is_loader;else showMatches"></span>
         <ng-template #showMatches>
 
-			<ng-container *ngIf="paymentDetails[0].discount > 0 && paymentDetails[1].discount > 0 && paymentDetails[2].discount > 0">
-				
-				<div class="offerShow"><a routerLink="/paymentGetway">Don't miss our Valentine's Day special:    <span>20% OFF</span>    subscriptions Feb 10th - 18th. Grab it now!</a></div>
+			<ng-container *ngIf="paymentDetails.length > 0 ? (paymentDetails[0]?.discount > 0 && paymentDetails[1]?.discount > 0 && paymentDetails[2]?.discount > 0) : false">
+				<div class="offerShow"><a routerLink="/paymentGetway">Don't miss our Valentine's Day special:    <span>20% OFF</span>    subscriptions Feb 10th - 29th. Grab it now!</a></div>
 				</ng-container>
 
 <div class="header_top">
@@ -24,10 +23,7 @@
 		<ul class="afterLogin_left">
 		<li>  <a routerLink="/user_dashboard">My Dashboard</a></li>
 		
-
-			<!-- <li>  <a routerLink="/profile_list">My Matches</a></li> -->
-			<!-- <li>{{accountType}} test {{this.accountType == ''}}</li> -->
-			<!-- <li> <a routerLink="/wishlist">My Wishlists </a></li> -->
+		<!-- <li>{{this.userData_1?.file_path | json}}</li> -->
 
 
 		<div *ngIf="memberShipStatus.payStatus > '0';then paidMember_header else nonePaidMember_header">

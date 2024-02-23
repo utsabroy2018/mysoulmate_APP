@@ -5,10 +5,6 @@
 <div class="appLoader_outer" *ngIf="inProgressShort; else mySelf">
   <div class="loaderLogoApp">
   <img src="assets/images/logo_new.png" alt="" class="forMobile"/>
-
-  <!-- <p>v 1.9.5</p>
-  <p>© Mysoulmate 2024</p> -->
-
   <div></div>
 </div>
   
@@ -94,18 +90,18 @@
     <div class="otpMain otpMain_registration">
       
       
-      <label class="otp">
+      <div class="otp">
         <div class="field_outer_label">
           <p class="a-o-i">Enter verification code</p>
           <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="config"></ng-otp-input>
           <!-- <ng-otp-input type=" number" #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="config"></ng-otp-input> -->
             </div>
-      </label>
+          </div>
 
-      <label class="resendOtp"> 
+      <div class="resendOtp"> 
         <button (click)="resendOTP()"><i class="fa fa-refresh" aria-hidden="true"></i> Resend OTP</button>  <span>{{display_new}}</span>
 
-      </label>
+      </div>
 
       <div class="otpExpair" [hidden]="showExpairMsg"> <span> Your Otp has Expired</span></div>
     </div>

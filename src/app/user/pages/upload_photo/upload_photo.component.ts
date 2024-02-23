@@ -10,6 +10,9 @@ import { environment } from 'src/environments/environment';
 import { Dimensions, ImageCroppedEvent, ImageTransform } from 'ngx-image-cropper';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
 
+import { DialogBodyComponent } from 'src/app/dialog-body/dialog-body.component';
+import { MatDialog } from '@angular/material/dialog';
+
 @Component({
   selector: 'app-upload_photo',
   templateUrl: './upload_photo.component.html',
@@ -76,7 +79,9 @@ export class Upload_photoComponent implements OnInit {
   
   getLocalSecrectUrl= this.sds.getLocalSecrectData();
 
-  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sanitizer: DomSanitizer, private sds:SecrectDataService) { }
+  alertBoxTxt =  'Do you want to delete permantly?';
+
+  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sanitizer: DomSanitizer, private sds:SecrectDataService, private matDialog:MatDialog) { }
 
   ngOnInit() {
 
@@ -130,11 +135,14 @@ onMultyplPhotSele(event: any) {
     var selectedFile = event.target.files[i];
     
     
-    if(selectedFile.type == 'image/png' || selectedFile.type == 'image/jpeg'){
+    if(selectedFile.type == 'image/png' || selectedFile.type == 'image/jpeg' || selectedFile.type == 'image/jpg'){
 
       this.fileList.push(selectedFile);
 
       this.listOfFiles.push({id: 0, filePath: this.sanitizer.bypassSecurityTrustResourceUrl(URL.createObjectURL(selectedFile)), index: i});
+      this.msgService.successMsg('PHOTO_UP_CORECT');
+    } else {
+      this.msgService.errorMsg('PHOTO_NOTUP_CORECT');
     }
     
 
@@ -157,53 +165,51 @@ onMultyplPhotSele(event: any) {
 
 removeMultyImg(index:any, id:any, fileIndex:any) {
 
- 
-
-  if(confirm('Do you want to delete permantly?')){
-
-    
-    if(id > 0){
-      this.service.global_service(0, '/kyc/single_pic_delete', `id=${id}`).subscribe((data:any) => {
-        this.imgDelResp=data
-
-        
-        
-        
-        if(this.imgDelResp.suc > 0){
-          // this.listOfFiles.splice(index, 1);
-          this.listOfFiles.splice(index, 1);
+  const dialogRef = this.matDialog.open(DialogBodyComponent, {
+    width:'350px',
+    // height:'200px',
+    data: {name: this.alertBoxTxt}
+    })
+  
+  
+    dialogRef.afterClosed().subscribe(result => {
+    console.log(result, 'this.animal');
+  
+    if(result == 'true'){
+      
+      if(id > 0){
+        this.service.global_service(0, '/kyc/single_pic_delete', `id=${id}`).subscribe((data:any) => {
+          this.imgDelResp=data
+  
           
+          
+          
+          if(this.imgDelResp.suc > 0){
+            this.listOfFiles.splice(index, 1);
+            
+          }
+        })
+      }else{
+  
+        this.listOfFiles.splice(index, 1);
+        fileIndex >= 0 ? this.fileList.splice(fileIndex, 1) : '';
+  
+        if(this.listOfFiles.length <= 5){
+          this.submit_isDisabled = false;
         }
-      })
-    }else{
-      // Delete the item from fileNames list
-      // this.listOfFiles.splice(index, 1);
-      
-      
-      this.listOfFiles.splice(index, 1);
-      // delete file from FileList
-      // fileIndex >= 0 ? this.fileList.splice(fileIndex, 1) : '';
-      fileIndex >= 0 ? this.fileList.splice(fileIndex, 1) : '';
-
-      if(this.listOfFiles.length <= 5){
-        this.submit_isDisabled = false;
+  
+        if(this.listOfFiles.length < 1){
+          this.submit_isDisabled = true;
+        }
+  
       }
-
-      if(this.listOfFiles.length < 1){
-        this.submit_isDisabled = true;
-      }
-
+      
+    } 
+    if(result == 'false'){
+  
     }
-
-  // this.getGalleryPhoto();
-  // this.get_Single_Photo();
-
-  }
-else{
-  // debugger
-  alert('please choose your photo')
-}
-
+  
+    });
 
 }
 
