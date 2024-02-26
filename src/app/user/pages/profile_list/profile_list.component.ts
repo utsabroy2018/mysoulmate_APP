@@ -11,7 +11,7 @@ import { Subscription, pluck } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
+import { Location } from '@angular/common';
 
 
 
@@ -160,7 +160,8 @@ accTypeAftPay:any;
 buttonColor: string = '#B2BEB5';
 
 
-  constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService, private location: Location
+    ) { }
 
   ischecked_desclaimer:any;
   sendMsgForm = new FormGroup({
@@ -279,7 +280,9 @@ buttonColor: string = '#B2BEB5';
     
   }
 
-  
+  goBack(): void {
+    this.location.back();
+  }
   
 
   // get_Single_Photo__Astro(){

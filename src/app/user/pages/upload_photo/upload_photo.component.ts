@@ -12,6 +12,7 @@ import { SecrectDataService } from 'src/app/Services/SecrectData.service';
 
 import { DialogBodyComponent } from 'src/app/dialog-body/dialog-body.component';
 import { MatDialog } from '@angular/material/dialog';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-upload_photo',
@@ -81,7 +82,7 @@ export class Upload_photoComponent implements OnInit {
 
   alertBoxTxt =  'Do you want to delete permantly?';
 
-  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sanitizer: DomSanitizer, private sds:SecrectDataService, private matDialog:MatDialog) { }
+  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sanitizer: DomSanitizer, private sds:SecrectDataService, private matDialog:MatDialog, private location: Location) { }
 
   ngOnInit() {
 
@@ -104,6 +105,9 @@ export class Upload_photoComponent implements OnInit {
 
   }
 
+  goBack(): void {
+    this.location.back();
+  }
   
 // fileChangeEvent(event: any): void {
 //   this.imageChangedEvent = event;

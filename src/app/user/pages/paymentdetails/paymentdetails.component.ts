@@ -6,6 +6,7 @@ import { DataService } from 'src/app/Services/data.service';
 import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-paymentdetails',
@@ -34,7 +35,7 @@ export class PaymentdetailsComponent implements OnInit {
 
   paymentEncodedResponse:any = false;
 
-  constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private msgService: MessageService, private datePipe: DatePipe, protected _sanitizer: DomSanitizer, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private msgService: MessageService, private datePipe: DatePipe, protected _sanitizer: DomSanitizer, private sds:SecrectDataService, private location: Location) { }
   
   paymentForm = new FormGroup({
     // field_who_creat_profile: new FormControl('',[Validators.required]),
@@ -138,7 +139,9 @@ export class PaymentdetailsComponent implements OnInit {
     this.getCurrentFinancialYear();
   }
 
-
+  goBack(): void {
+    this.location.back();
+  }
 
 
   getCurrentFinancialYear() {

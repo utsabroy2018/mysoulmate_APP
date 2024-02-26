@@ -382,7 +382,7 @@ export class RegistrationComponent implements OnInit, AfterViewInit {
     });
 
     if(!this.userName_phone){
-      // this.router.navigate(['/home']);
+      this.router.navigate(['/home']);
     }
     
 

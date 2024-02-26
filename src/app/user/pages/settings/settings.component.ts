@@ -4,6 +4,7 @@ import { FormGroup, Validators,FormControl,FormBuilder } from '@angular/forms';
 import { MessageService } from 'src/app/Services/message.service';
 import { DataService } from 'src/app/Services/data.service';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-settings',
@@ -12,7 +13,7 @@ import { SecrectDataService } from 'src/app/Services/SecrectData.service';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor(private service:DataService, private msgService: MessageService,  private router:Router,private formBuilder: FormBuilder, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private msgService: MessageService,  private router:Router,private formBuilder: FormBuilder, private sds:SecrectDataService, private location: Location) { }
 
   localstorageDT:any
   dt:any
@@ -48,6 +49,10 @@ export class SettingsComponent implements OnInit {
       ​​​user_name: this.getLocalSecrectUrl.data.​​​user_name
      }
      
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
   savebtn() { 

@@ -24,6 +24,8 @@ import {
 } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
+import { Location } from '@angular/common';
+
 declare let google: any;
 
 @Component({
@@ -44,7 +46,7 @@ export class User_portfolio_editComponent implements OnInit {
   birth_loc_latlong:any;
   dob: string;
   @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement>;
-  constructor(private service:DataService, private router:Router, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService) { 
+  constructor(private service:DataService, private router:Router, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService, private location: Location) { 
     
   }
 
@@ -531,7 +533,11 @@ export class User_portfolio_editComponent implements OnInit {
 
       // END //
       // this.initForm();
-  }   
+  }  
+  
+  goBack(): void {
+    this.location.back();
+  }
 
   gotoViewProfile(userId:any){
     this.router.navigate(['/portfolio_view', btoa(userId)]);

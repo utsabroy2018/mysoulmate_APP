@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } 
 import { Router } from '@angular/router';
 import { MessageService } from 'src/app/Services/message.service';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-paymentGetway',
@@ -23,7 +24,7 @@ export class PaymentGetwayComponent implements OnInit {
   getLocalSecrectUrl= this.sds.getLocalSecrectData(); 
 
 
-  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sds:SecrectDataService, private location: Location) { }
 
   ngOnInit() {
 
@@ -58,6 +59,11 @@ export class PaymentGetwayComponent implements OnInit {
 
   }
 
+  goBack(): void {
+    this.location.back();
+  }
+
+  
   closeEditePopup(){
     document.getElementById('popup_Id').classList.remove('offerPopup_Active');
     document.getElementById('popup_Background').classList.remove('offerPopup_background_Active');

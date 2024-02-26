@@ -9,6 +9,8 @@ import { MessageService } from 'src/app/Services/message.service';
 import { billingAllHistory } from 'src/app/Model/user_dtls';
 import html2canvas from "html2canvas";
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
+import { Location } from '@angular/common';
+
 
 // import { HttpClient } from '@angular/common/http';
 
@@ -39,7 +41,7 @@ export class PaymenthistoryComponent implements OnInit {
   // billingAllHistory:billingAllHistory;
   getLocalSecrectUrl= this.sds.getLocalSecrectData(); 
 
-  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private router:Router, private msgService: MessageService, private sds:SecrectDataService, private location: Location) { }
 
   ngOnInit() {
 
@@ -66,6 +68,10 @@ export class PaymenthistoryComponent implements OnInit {
 
 
     this.loadPaymentHistory()
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
   openPDF(event, item): void {

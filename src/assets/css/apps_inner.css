@@ -344,8 +344,8 @@ color: #6d6f73;}
 
 .portfolio_left_sub_nav ul{margin: 0; padding: 0; list-style-type: none;}
 .portfolio_left_sub_nav ul li{color: #6d6f73; margin:0 0 3px 0; padding: 0;  font-family: 'Cabin', sans-serif; display: block}
-.portfolio_left_sub_nav ul li span{width: 24px; display: flex; align-items: center;}
-.portfolio_left_sub_nav ul li span img{width: 15px;}
+.portfolio_left_sub_nav ul li span{width: 26px; display: flex; align-items: center;}
+.portfolio_left_sub_nav ul li span img{width: 16px;}
 .portfolio_left_sub_nav ul li a{color:#43495e; text-decoration: none; font-size: 16px; display: flex; align-items: center; line-height:18px; padding:7px 0; display: flex;}
 .portfolio_left_sub_nav ul li a img{margin-right: 5px;}
 .portfolio_left_sub_nav ul li a:hover{color: #ff7c0b;}
@@ -3057,7 +3057,7 @@ ul.msgServer li{margin: 0 0 5px 0;
     margin: 0 3px;}
 
     .dialogBoxTitle{text-align: center;
-      font-size: 18px !important;
+      font-size: 15px !important;
       color: #333 !important;}
   
     .dialogBoxBtnGroup{text-align: center !important; justify-content:center !important;}
@@ -3215,6 +3215,26 @@ ul.brxe-list li::before {
 }
 
 
+.sectionTitle_Res{width: 100%; display: flex;}
+.sectionTitle_Res h2{margin: 0 auto 0 0;
+  font-size: 18px;
+  color: #0d2048;
+  text-align: center;
+  border-bottom: #0d2048 solid 1px;
+  padding-right: 45px;
+  padding-bottom: 3px;
+  font-weight: 700;}
+.sectionTitle_Res .backBtn{margin: 0 15px 0 0;
+  padding: 5px 8px;
+  color: #fff;
+  background: #d42c3d;
+  border: none;
+  line-height: 15px;
+  font-size: 15px;
+  border-radius: 3px;
+  display: flex;}
+  .sectionTitle_Res .backBtn img{width: 18px;
+    margin-right: 7px;}
 
 
 

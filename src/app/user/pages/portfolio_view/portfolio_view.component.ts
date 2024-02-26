@@ -11,6 +11,7 @@ import { environment } from 'src/environments/environment';
 // import { Lightbox } from 'ngx-lightbox';
 import { user_basic_info, user_groom_loc } from 'src/app/Model/user_dtls';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
+import { Location } from '@angular/common';
 
 
 @Component({
@@ -24,7 +25,7 @@ export class Portfolio_viewComponent implements OnInit {
 
     flag: any = false
 
-  constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService, private location: Location) { }
 
   age:any;
   showAge:any;
@@ -227,6 +228,10 @@ this.field_Spoken_Languages_OBJ = dynamic_data.field_Spoken_Languages;
 // console.log(this.memberShipStatus);
 const queryString = `own_id=${this.localstorageDT.id}&partner_id=${this.profile_UserId}`;
 // console.log(queryString,'queryString')
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 

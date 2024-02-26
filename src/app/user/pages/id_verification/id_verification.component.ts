@@ -6,7 +6,7 @@ import { DataService } from 'src/app/Services/data.service';
 import { pluck } from 'rxjs';
 import { user_basic_info } from 'src/app/Model/user_dtls';
 import { SecrectDataService } from 'src/app/Services/SecrectData.service';
-// import { OnlyNumberDirective } from 'src/app/Directives/only-number.directive';
+import { Location } from '@angular/common';
 
 
 @Component({
@@ -81,7 +81,7 @@ export class Id_verificationComponent implements OnInit, AfterContentChecked {
   adhaarAlert = false;
   pannAlert = false;
 
-  constructor(private service: DataService, private msgService: MessageService, private router: Router, private formBuilder: FormBuilder, private sds:SecrectDataService) { }
+  constructor(private service: DataService, private msgService: MessageService, private router: Router, private formBuilder: FormBuilder, private sds:SecrectDataService, private location: Location) { }
 
   ngOnInit() {
 
@@ -132,9 +132,10 @@ export class Id_verificationComponent implements OnInit, AfterContentChecked {
     // })
     // this.verifyBtn = this.localstorageDT.profile_flag == 'Y' ? true : false;
   }
-  // ngAfterViewInit(): void {
 
-  // }
+  goBack(): void {
+    this.location.back();
+  }
 
   ngAfterContentChecked(): void {
     // this.verifyBtn = localStorage.getItem('​​​profile_flag') == 'Y' ? true : false;

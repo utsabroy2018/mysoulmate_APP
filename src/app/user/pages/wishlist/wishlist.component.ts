@@ -7,6 +7,7 @@ import { dynamic_data } from 'src/dynamic_data/dynamic_data';
 import { MessageService } from 'src/app/Services/message.service';
 import { ActivatedRoute } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-wishlist',
@@ -47,8 +48,13 @@ export class WishlistComponent implements OnInit {
     
   }
 
-  constructor(private route: ActivatedRoute,private router: Router, private sds: SecrectDataService, private service: DataService,private msgService: MessageService) { }
+  constructor(private route: ActivatedRoute,private router: Router, private sds: SecrectDataService, private service: DataService,private msgService: MessageService, private location: Location) { }
   getLocalSecrectUrl = this.sds.getLocalSecrectData();
+
+  goBack(): void {
+    this.location.back();
+  }
+  
   ngOnInit() {
     this.field_height_OBJ = dynamic_data.field_height;
     this.localstorageDT = {

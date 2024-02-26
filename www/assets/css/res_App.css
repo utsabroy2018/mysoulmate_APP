@@ -1,4 +1,11 @@
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1024px) {
+
+  .regestra_dob_time{font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    display: inline-block;}
+
+  .portfolio_right_wish {max-width: 100%;}
 
   /* New responsive Start  */
   .headerSec .header_top{padding:3% 0 20px 0;}
@@ -55,8 +62,8 @@
     /* .topNavSecResponsiv{display: none;} */
     .portfolio_form_fill_Top{box-shadow:none;}
 
-  .footer_bottomSec a{color: #73787c; font-size: 14px; flex: content;}
-  .footer_bottomSec a i{font-size: 14px;}
+  .footer_bottomSec a{color: #5377d8; font-size: 14px; flex: content;}
+  .footer_bottomSec a i{font-size: 28px;}
   .footer_bottomSec a span{width: 100%; display: block; line-height: 13px;}
 
   .loaderLogoApp{text-align: center; width: 100%; padding: 0 25px;}
@@ -229,7 +236,7 @@
 
   .slideMenuResponsive .portfolio_left_sub_nav ul .viewPro_link{
       margin: 0 0 15px 0;
-      padding: 4px 12px;
+      padding:6px 12px;
       font-size: 13px;
       border-radius: 22px;
       border: #ff7c0b solid 1px;
@@ -283,7 +290,7 @@
     margin-bottom: 5px;
     font-size: 18px;
     color: #0d2048;
-    font-weight: 700; padding: 0 15px;}
+    font-weight: 700; padding: 0 0;}
 
  .formStep_group_2 .form_group_custom .col-sm-3{
         max-width: 100%;
@@ -320,7 +327,7 @@
   width: 80%;
   right: 10%;}
 
-  .portfolio_left_sub_nav ul li a{font-size: 15px;}
+  .portfolio_left_sub_nav ul li a{font-size: 16px;}
 
  ul.res_upgrade_btn li:first-child{margin-right: 10px;}
 
@@ -392,7 +399,7 @@
 .upgradeNowSec .upgreadetitle button{font-size: 15px;}
 
 .portfolio_Search_list_desctop{display: none;}
-.partnerListMobile{display: block;}
+.partnerListMobile{display: block; max-width: 450px; margin: 0 auto;}
 
 .portfolio_Search_list_wish{display: none;}
 
@@ -432,7 +439,7 @@
   display: block;
   width: 100%; background: #ece9e4;}
 
-  .portfolio_right{ padding: 0 40px }
+  .portfolio_right{ padding:0 20px; }
 
 
 }

@@ -1,4 +1,7 @@
-<app-after_login_header_Global></app-after_login_header_Global>
+<!-- <div class="forDesktopHeader_login"><app-after_login_header_Global></app-after_login_header_Global></div> -->
+
+
+<div class="forResponsiveHeader_login"><app-headerResponsive></app-headerResponsive></div>
 
 <div class="innerMain_wraper">
 	<div class="wrapper">
@@ -12,6 +15,11 @@
 	</div> -->
 		
 	<div class="col-sm-12 float-left portfolio_right">
+
+		<div class="sectionTitle_Res mb-3">
+			<button (click)="goBack()" class="backBtn"> <img src="assets/images/turn-back.png" alt=""/> Back</button> 
+		  </div>
+		  
 		<div class="portfolio_right_sub">
 		  
 			<div class="portfolio_form_fill">

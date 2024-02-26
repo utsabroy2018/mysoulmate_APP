@@ -29,6 +29,7 @@ export class TermsconditionComponent implements OnInit {
    }
 
   ngOnInit() {
+    
   }
 
 }

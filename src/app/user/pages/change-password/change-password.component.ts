@@ -17,6 +17,7 @@ export class ChangePasswordComponent implements OnInit {
   errorPass:any;
   isButtonDisabled = false;
   linkExpired= false
+  
   constructor(private service:DataService, private router:Router, private route: ActivatedRoute, private sds:SecrectDataService) {
     this.isLogin = this.service.login();
 
@@ -32,6 +33,8 @@ export class ChangePasswordComponent implements OnInit {
    hide_old = true;
    hide_new = true;
    hide_con = true;
+
+   
    
    passwordForm = new FormGroup({
     new_pass_1: new FormControl('',[Validators.required]),

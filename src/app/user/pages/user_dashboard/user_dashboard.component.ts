@@ -20,6 +20,7 @@ export interface IDiscoveMatches{
   "matches":number,
   "is_loader":boolean
 }
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-user_dashboard',
@@ -99,7 +100,7 @@ accTypeAftPay:any;
   profileVerification:any
   getLocalSecrectUrl= this.sds.getLocalSecrectData();
 
-  constructor(private service:DataService, private router:Router, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService) { }
+  constructor(private service:DataService, private router:Router, private msgService: MessageService, private datePipe: DatePipe, private sds:SecrectDataService, private location: Location) { }
 
   
 
@@ -147,6 +148,10 @@ accTypeAftPay:any;
   this.get_PartnerList();
   
 
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
   // showPopup(){

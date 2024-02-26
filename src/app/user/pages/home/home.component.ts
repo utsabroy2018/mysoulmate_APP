@@ -115,11 +115,22 @@ export class HomeComponent implements OnInit {
       password: this.loginForm.controls.password_field.value
     }
 
-  setTimeout(() =>{
-  this.inProgressShort = false;
-  },3000)
+
+  // setTimeout(() =>{
+  // this.inProgressShort = false;
+  // },3000)
+
+  this.logout_Fnc();
 
 
+
+  }
+
+  logout_Fnc(){
+    localStorage.clear()
+
+    // this.router.navigate(['home']);
+    
   }
 
   loginFunc(){
@@ -259,6 +270,8 @@ export class HomeComponent implements OnInit {
 
   }
 
+
+
   KeepmeLog(event:any){
 
     if(event.target.checked == true ){
@@ -352,7 +365,8 @@ export class HomeComponent implements OnInit {
 
   onOtpChange(otp) {
     this.otp = otp;
-
+    // console.log(this.getOTP , '==' , this.otp);
+    
     if (this.otp.length == 4) {
       if (this.getOTP == this.otp) {
         this.verifyBtnActive = true;
