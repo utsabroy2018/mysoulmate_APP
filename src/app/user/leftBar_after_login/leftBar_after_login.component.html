@@ -89,23 +89,23 @@ here is ignored</div>
 
   <div *ngIf="memberShipStatus.payStatus > '0';then paidMember else nonePaidMember">
     here is ignored</div>
-  <ng-template #paidMember> <button type="button" routerLink="/paymentGetway" class="upgrade_link">Upgrade Now </button> </ng-template>
-  <ng-template #nonePaidMember><button type="button" routerLink="/paymentGetway" class="upgrade_link">Upgrade Now </button></ng-template>
+  <ng-template #paidMember> <button type="button" routerLink="/user/paymentGetway" class="upgrade_link">Upgrade Now </button> </ng-template>
+  <ng-template #nonePaidMember><button type="button" routerLink="/user/paymentGetway" class="upgrade_link">Upgrade Now </button></ng-template>
   
     
     
     
     <div class="portfolio_left_sub_nav">
       <ul>
-        <li><a (click)="leftNavFn('/user_dashboard')"> <span><img src="assets/images/icon/dashboard.svg" alt=""></span> Dashboard</a></li>
-        <li><a (click)="leftNavFn('/profile_list')"> <span><img src="assets/images/icon/match.svg" alt=""></span> My Matches</a></li>
-        <li><a (click)="leftNavFn('/wishlist')"> <span><img src="assets/images/icon/wishlist.svg" alt=""></span>  My Wishlist</a></li>
-        <li><a (click)="leftNavFn('/user_profile_edit')"> <span><img src="assets/images/icon/edit.svg" alt=""></span> Edit Profile</a></li>
-        <li><a (click)="leftNavFn('/paymenthistory')"> <span><img src="assets/images/icon/membership.svg" alt=""></span>  My Membership</a></li>
-        <li><a (click)="leftNavFn('/upload_photo')"> <span><img src="assets/images/icon/photo.svg" alt=""></span>  Photo Gallery</a></li>
-      <li><a (click)="leftNavFn('/settings')"> <span><img src="assets/images/icon/reset_password.svg" alt=""></span>  Reset Password</a></li>
+        <li><a (click)="leftNavFn('/user/user_dashboard')"> <span><img src="assets/images/icon/dashboard.svg" alt=""></span> Dashboard</a></li>
+        <li><a (click)="leftNavFn('/user/profile_list')"> <span><img src="assets/images/icon/match.svg" alt=""></span> My Matches</a></li>
+        <li><a (click)="leftNavFn('/user/wishlist')"> <span><img src="assets/images/icon/wishlist.svg" alt=""></span>  My Wishlist</a></li>
+        <li><a (click)="leftNavFn('/user/user_profile_edit')"> <span><img src="assets/images/icon/edit.svg" alt=""></span> Edit Profile</a></li>
+        <li><a (click)="leftNavFn('/user/paymenthistory')"> <span><img src="assets/images/icon/membership.svg" alt=""></span>  My Membership</a></li>
+        <li><a (click)="leftNavFn('/user/upload_photo')"> <span><img src="assets/images/icon/photo.svg" alt=""></span>  Photo Gallery</a></li>
+      <li><a (click)="leftNavFn('/user/settings')"> <span><img src="assets/images/icon/reset_password.svg" alt=""></span>  Reset Password</a></li>
         <!-- <li><a (click)="leftNavFn('/partner_preferences')"><img src="assets/images/profil_blue.png" alt=""> My preference</a></li> -->
-      <li><a (click)="leftNavFn('/id_verification')"> <span><img src="assets/images/icon/verify.svg" alt=""></span>  Verify Your Profile</a></li>
+      <li><a (click)="leftNavFn('/user/id_verification')"> <span><img src="assets/images/icon/verify.svg" alt=""></span>  Verify Your Profile</a></li>
       
       <li><a (click)="logout_Fnc()"> <span><img src="assets/images/icon/logout.svg" alt=""></span> Logout</a></li>
       <!-- <li><a> <img src="assets/images/love_blue.png" alt=""> Success Stories</a></li>	 -->

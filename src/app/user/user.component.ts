@@ -3,6 +3,7 @@ import { DataService } from 'src/app/Services/data.service';
 import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MessageService } from 'src/app/Services/message.service';
+import { SecrectDataService } from '../Services/SecrectData.service';
 
 @Component({
   selector: 'app-user',
@@ -23,35 +24,42 @@ export class UserComponent implements OnInit, AfterViewInit {
   
   routerUrl:any;
 
-  withoutLogin_headerShow = false;
-  afterLogin_headerShow = true;
+  // withoutLogin_headerShow = false;
+  // afterLogin_headerShow = true;
+  accTypeAftPay:any;
 
   // hideOtheres:any;
+  constructor(private service:DataService, private sds:SecrectDataService) {}
+
+  profile_UserId_new:any;
+  getLocalSecrectUrl= this.sds.getLocalSecrectData();
+
+  isVisible:boolean
+
+  sidebarCheck:boolean;
+  pageNameCheck__:any;
   
-  constructor(private service:DataService, private router:Router, private msgService: MessageService) {
-    
-   
 
-
-    // this.router.events.subscribe(() => {
-    //   if(this.router.url == '/profile_list'){
-    //     this.afterLogin_headerShow = true;
-    //     this.withoutLogin_headerShow = false;
-    //     // /profile_list
-    //   }else{
-    //     this.afterLogin_headerShow = false;
-    //     this.withoutLogin_headerShow = true;
-    //   }
-    // })
-
-
-   }
 
   
 
   ngOnInit() {
 
-     this.TestFn();
+    this.accTypeAftPay = this.getLocalSecrectUrl.data.pay_name;
+    
+    
+    this.service.sidebar_Check.subscribe(res=>{
+      this.sidebarCheck = res;
+      console.log(this.sidebarCheck , 'this.sidebarCheck ');
+      
+    })
+
+    this.service.pageNameCheck.subscribe(res=>{
+      console.log(res, 'ressssssssss'); 
+      this.pageNameCheck__ = res;
+    })
+
+    //  this.TestFn();
 
   }
 
@@ -60,17 +68,5 @@ export class UserComponent implements OnInit, AfterViewInit {
   }
 
 
-  TestFn = () =>{
-    this.router.events.subscribe(() => {
-      if(this.router.url == '/registration' || this.router.url == '/home'){
-        this.afterLogin_headerShow = true;
-        this.withoutLogin_headerShow = false;
-        // /profile_list
-      }else{
-        this.afterLogin_headerShow = false;
-        this.withoutLogin_headerShow = true;
-      }
-    })
-  }
 
 }

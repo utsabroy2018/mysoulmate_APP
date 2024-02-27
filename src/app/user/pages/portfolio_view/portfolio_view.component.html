@@ -4,12 +4,11 @@
 <!-- <div class="forDesktopHeader_login"><app-after_login_header_Global [isVisible]="isVisible"></app-after_login_header_Global></div> -->
 
 
-<div class="forResponsiveHeader_login"><app-headerResponsive [isVisible]="isVisible"></app-headerResponsive></div>
+<!-- <div class="forResponsiveHeader_login"><app-headerResponsive [isVisible]="isVisible"></app-headerResponsive></div> -->
 
 
 
-<div class="innerMain_wraper profileView_Res">
-	<div class="wrapper">
+
 
 		<div class="col-sm-12">
 
@@ -21,7 +20,7 @@
 				
 				<ng-container *ngIf="this.localstorageDT.id == this.profile_UserId">
 				<div class="edit_topViewPage">
-				<button [routerLink]="['/user_profile_edit']" class="editeBtnView"><i class="fa fa-edit" aria-hidden="true"></i> Edit your profile</button>
+				<button [routerLink]="['/user/user_profile_edit']" class="editeBtnView"><i class="fa fa-edit" aria-hidden="true"></i> Edit your profile</button>
 				</div>
 				</ng-container>
 
@@ -356,7 +355,7 @@
 							<div class="upgradeNowSec">
 							<div class="upgreadeIcon">&nbsp;</div>
 							<div class="upgreadetitle">
-							<button type="button" routerLink="/paymentGetway" class="lockPopupHoverLink">Upgrade Now </button>
+							<button type="button" routerLink="/user/paymentGetway" class="lockPopupHoverLink">Upgrade Now </button>
 							</div>
 							</div>
 							</ng-container>
@@ -460,7 +459,7 @@
 
 						<span class="upgrade_Lock">
 						<div class="lockPopupHover">
-						<button type="button" routerLink="/paymentGetway" class="lockPopupHoverLink">Upgrade <span class="responNo">Now</span></button>
+						<button type="button" routerLink="/user/paymentGetway" class="lockPopupHoverLink">Upgrade <span class="responNo">Now</span></button>
 						</div>
 						</span>
 						</ng-container>
@@ -508,7 +507,7 @@
 
 									<span class="upgrade_Lock">
 									<div class="lockPopupHover">
-									<button type="button" routerLink="/paymentGetway" class="lockPopupHoverLink">Upgrade <span class="responNo">Now</span> </button>
+									<button type="button" routerLink="/user/paymentGetway" class="lockPopupHoverLink">Upgrade <span class="responNo">Now</span> </button>
 									</div>
 									</span>
 								</ng-container>
@@ -1168,7 +1167,7 @@
 								<div class="upgradeNowSec">
 									<div class="upgreadeIcon">&nbsp;</div>
 									<div class="upgreadetitle">
-										<button type="button" routerLink="/paymentGetway" class="lockPopupHoverLink">Upgrade Now </button>
+										<button type="button" routerLink="/user/paymentGetway" class="lockPopupHoverLink">Upgrade Now </button>
 									</div>
 								</div>
 								</div>
@@ -1648,8 +1647,7 @@
 
 		</div>
 
-	</div>
-</div>
+
 
 
 <div class="modal fade" id="sendMsgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1751,9 +1749,32 @@
 				<div class="astro_popup_sec_Full">
 				<div class="astro_popup_sec">
 					<h3 class="rightPercan"><img src="assets/images/astro_pop_icin.png" alt="" /> Astro Numerical Match 
-						<span [ngStyle]="{'background-color': partner_match_Marks?.total_marks >= 0 && partner_match_Marks?.total_marks <= 29 ? '#eb0c0c' : (partner_match_Marks?.total_marks >= 30 && partner_match_Marks?.total_marks <= 49 ? '#ff7e00' : '#477d12')}">
+						
+						<!-- <span [ngStyle]="{'background-color': partner_match_Marks?.total_marks >= 0 && partner_match_Marks?.total_marks <= 29 ? '#eb0c0c' : (partner_match_Marks?.total_marks >= 30 && partner_match_Marks?.total_marks <= 49 ? '#ff7e00' : '#477d12')}">
 							{{partner_match_Marks?.total_marks}}%
-						</span> </h3>
+						</span>  -->
+
+						<ng-container *ngIf="partner_match_Marks?.total_marks >= 0 && partner_match_Marks?.total_marks <= 50">
+							<span style="background: #eb0c0c;">{{partner_match_Marks?.total_marks}}% Bad</span>
+						</ng-container>
+
+						<ng-container *ngIf="partner_match_Marks?.total_marks >= 51 && partner_match_Marks?.total_marks <= 59">
+							<span style="background: rgb(250, 63, 6);">{{partner_match_Marks?.total_marks}}% Average</span>
+						</ng-container>
+
+						<ng-container *ngIf="partner_match_Marks?.total_marks >= 60 && partner_match_Marks?.total_marks <= 75">
+							<span style="background:#ff7e00;">{{partner_match_Marks?.total_marks}}% Good</span>
+						</ng-container>
+
+						<ng-container *ngIf="partner_match_Marks?.total_marks >= 76 && partner_match_Marks?.total_marks <= 85">
+							<span style="background: #2bda57;">{{partner_match_Marks?.total_marks}}% Very Good</span>
+						</ng-container>
+
+						<ng-container *ngIf="partner_match_Marks?.total_marks >= 86 && partner_match_Marks?.total_marks <= 100">
+							<span style="background: #477d12;">{{partner_match_Marks?.total_marks}}% Excellent</span>
+						</ng-container>
+					
+					</h3>
 					<div class="astro_popup_sec_percent">
 
 <p [ngStyle]="{'color': partner_match_Marks?.partner?.elementMarks >= 0 && partner_match_Marks?.partner?.elementMarks <= 9 ? '#eb0c0c' : (partner_match_Marks?.partner?.elementMarks >= 10 && partner_match_Marks?.partner?.elementMarks <= 19 ? '#fa3f06' : (partner_match_Marks?.partner?.elementMarks >= 20 && partner_match_Marks?.partner?.elementMarks <= 29 ? '#ff7e00' : '#477d12'))  }">
@@ -1837,16 +1858,6 @@
 	</div>
 </div>
 
-<div class="footer_bottomSec">
-	<a routerLink="/profile_list" class="profList_link_bot"><i class="fa fa-users" aria-hidden="true"></i>
-	<span>Matches</span>
-	</a>
-	<a routerLink="/wishlist" class="wish_link_bot"><i class="fa fa-heart" aria-hidden="true"></i>
-	<span>My Wishlist</span>
-	</a>
-	<a routerLink="/user_dashboard" class="dash_link_bot"><i class="fa fa-tachometer" aria-hidden="true"></i>
-	<span>Dashboard</span>
-	</a>
-	</div>
+
 
 	

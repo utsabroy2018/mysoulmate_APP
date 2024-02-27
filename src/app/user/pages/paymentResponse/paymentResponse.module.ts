@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PaymentResponseComponent } from './paymentResponse.component';
-import { LeftBar_after_loginModule } from '../../leftBar_after_login/leftBar_after_login.module';
-import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
+// import { LeftBar_after_loginModule } from '../../leftBar_after_login/leftBar_after_login.module';
+// import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
 import { RouterModule, Routes } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -19,14 +19,15 @@ const routes: Routes = [
   {
     path: '',
     component: PaymentResponseComponent,
+    data:{pageName:'paymentRespon'}
   }
 ]
 
 @NgModule({
   imports: [
     CommonModule,
-    LeftBar_after_loginModule,
-    After_login_header_GlobalModule,
+    // LeftBar_after_loginModule,
+    // After_login_header_GlobalModule,
     RouterModule.forChild(routes),
     CarouselModule,
 

@@ -2,7 +2,6 @@ import {  NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserComponent } from './user.component';
 import { RouterModule, Routes } from '@angular/router';
-import { FooterComponent } from './footer/footer.component';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
@@ -13,15 +12,18 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 
 import {MatDividerModule} from '@angular/material/divider';
-import {MatButtonModule} from '@angular/material/button';
+// import {MatButtonModule} from '@angular/material/button';
 
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AuthGuard } from '../guard/auth.guard';
 import {MatChipsModule} from '@angular/material/chips';
-import { PlatformModule } from '@angular/cdk/platform';
 // import {MatCardModule} from '@angular/material';
 // import { SecrectDataService } from '../Services/SecrectData.service';
-
+import {MatDialogModule} from '@angular/material/dialog'
+import { MatButtonModule } from '@angular/material/button';
+import { LeftBar_after_loginModule } from './leftBar_after_login/leftBar_after_login.module';
+import { HeaderResponsiveModule } from './headerResponsive/headerResponsive.module';
+import { FooterModule } from './footer/footer.module';
 
 
 
@@ -30,11 +32,11 @@ const routes: Routes = [
     path: '',
     component: UserComponent,
       children: [
-      {
-        path:'home',
-        loadChildren: () => import('./pages/home/home.module').then((m) => m.HomeModule)
-      },
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      // {
+      //   path:'home',
+      //   loadChildren: () => import('./pages/home/home.module').then((m) => m.HomeModule)
+      // },
+      // { path: '', redirectTo: 'home', pathMatch: 'full' },
       {
         path:'user_dashboard', canActivate:[AuthGuard],
         loadChildren: () => import('./pages/user_dashboard/user_dashboard.module').then((m) => m.User_dashboardModule)
@@ -46,10 +48,6 @@ const routes: Routes = [
       {
         path:'user_profile_edit', canActivate:[AuthGuard], 
         loadChildren: () => import('./pages/user_portfolio_edit/user_portfolio_edit.module').then((m) => m.User_portfolio_editModule)
-      },
-      {
-        path:'registration',  
-        loadChildren: () => import('./pages/registration/registration.module').then((m) => m.RegistrationModule)
       },
       {
         path:'upload_photo', canActivate:[AuthGuard],  
@@ -76,10 +74,6 @@ const routes: Routes = [
         loadChildren: () => import('./pages/settings/settings.module').then((m) => m.SettingsModule)
       },
       {
-        path:'notice', canActivate:[AuthGuard],  
-        loadChildren: () => import('./pages/notice/notice.module').then((m) => m.NoticeModule)
-      },
-      {
         path:'paymentGetway', canActivate:[AuthGuard],  
         // path:'paymentGetway',
         loadChildren: () => import('./pages/paymentGetway/paymentGetway.module').then((m) => m.PaymentGetwayModule)
@@ -90,10 +84,6 @@ const routes: Routes = [
       loadChildren: () => import('./pages/paymentResponse/paymentResponse.module').then((m) => m.PaymentResponseModule)
       },
       
-      {
-        path:'otp-login',  
-        loadChildren: () => import('./pages/otp_login/otp_login.module').then((m) => m.Otp_loginModule)
-      },
       {
         path:'paymenthistory', canActivate:[AuthGuard],  
         loadChildren: () => import('./pages/paymenthistory/paymenthistory.module').then((m) => m.PaymenthistoryModule)
@@ -150,17 +140,18 @@ const routes: Routes = [
     MatButtonModule,
     MatTooltipModule,
     MatChipsModule,
-    // PlatformModule,
+    MatDialogModule,
+    HeaderResponsiveModule,
+    LeftBar_after_loginModule,
+    FooterModule,
     RouterModule.forChild(routes)
-    
-    
   ],
 
   // providers: [
   //   SecrectDataService
   // ],
   
-  declarations: [UserComponent, FooterComponent],
+  declarations: [UserComponent],
 
 })
 export class UserModule { } 

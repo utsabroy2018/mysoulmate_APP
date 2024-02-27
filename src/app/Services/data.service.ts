@@ -18,16 +18,10 @@ export class DataService {
 
   afterLogShowBack = new BehaviorSubject('');
 
-  // user = new BehaviorSubject<User>(null);
-
-  // private currentUser = {
-  //   login_success:localStorage.getItem("login_success"),
-  //   id:localStorage.getItem("id"),
-  //   ​​​user_id:localStorage.getItem("​​​user_id"),
-  //   ​​​user_name:localStorage.getItem("​​​user_name")
-  // }
-
   
+  sidebar_Check = new BehaviorSubject<boolean | undefined>(undefined);
+  pageNameCheck =  new BehaviorSubject<String | undefined>(undefined);
+
 
 
   /***** SUMAN MITRA  */

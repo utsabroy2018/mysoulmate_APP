@@ -11,8 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
-import { Before_login_header_N_HomeModule } from '../../Before_login_header_N_Home/Before_login_header_N_Home.module';
-import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
+// import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
 
@@ -20,6 +19,7 @@ const routes: Routes = [
   {
     path: '',
     component: ChangePasswordComponent,
+    data:{pageName:'changePass'}
   }
 ]
 
@@ -36,8 +36,6 @@ const routes: Routes = [
     MatIconModule,
     MatDividerModule,
     MatButtonModule,
-    Before_login_header_N_HomeModule,
-    After_login_header_GlobalModule,
     HeaderResponsiveModule,
     RouterModule.forChild(routes)
   ],

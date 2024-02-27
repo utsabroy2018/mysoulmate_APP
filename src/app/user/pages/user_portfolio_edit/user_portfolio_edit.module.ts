@@ -8,8 +8,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
-import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
+// import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
+// import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
 import { MultiSelectModule } from 'primeng/multiselect';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {ScrollingModule} from '@angular/cdk/scrolling';
@@ -27,6 +27,7 @@ const routes: Routes = [
   {
     path: '',
     component: User_portfolio_editComponent,
+    data:{sidebar:false, pageName:'editeprofile'}
   }
 ]
 
@@ -39,9 +40,9 @@ const routes: Routes = [
     MatSelectModule,
     MatFormFieldModule,
     MatRadioModule,
-    HeaderResponsiveModule,
+    // HeaderResponsiveModule,
     MatCheckboxModule,
-    After_login_header_GlobalModule,
+    // After_login_header_GlobalModule,
     MultiSelectModule,
     MatAutocompleteModule,
     ScrollingModule,

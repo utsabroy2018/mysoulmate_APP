@@ -12,7 +12,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { AppInterceptorInterceptor } from './Interceptors/app-interceptor.interceptor';
-
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -22,7 +21,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AuthGuard } from './guard/auth.guard';
 import { SecrectDataService } from './Services/SecrectData.service';
-import { PlatformModule } from '@angular/cdk/platform';
 
 
 // import {MatChipsModule} from '@angular/material/chips';
@@ -34,15 +32,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon'; 
 import {MatDialogModule} from '@angular/material/dialog'
 
+// import { FooterComponent } from './footer/footer.component';
+import { SigninGuard } from './guard/signin.guard';
+
+
+
 //I keep the new line
 @NgModule({
   declarations: [	
     AppComponent,
-      DialogBodyComponent
+      DialogBodyComponent,
+      // FooterComponent
    ],
   imports: [
     BrowserModule,
-    PlatformModule,
     AppRoutingModule,
     UserModule,
     HttpClientModule,
@@ -62,6 +65,7 @@ import {MatDialogModule} from '@angular/material/dialog'
   ],
   providers: [
     SecrectDataService,
+    SigninGuard,
     AuthGuard,
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptorInterceptor, multi: true },
     DatePipe,

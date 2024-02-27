@@ -17,14 +17,15 @@ import {MatIconModule} from '@angular/material/icon';
 
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
-import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
-import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
+// import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
+// import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
 
 
 const routes: Routes = [
   {
     path: '',
     component: PaymenthistoryComponent,
+    data:{pageName:'paymentHistory'}
   }
 ]
 
@@ -32,14 +33,14 @@ const routes: Routes = [
   imports: [
     CommonModule,
     LeftBar_after_loginModule,
-    After_login_header_GlobalModule,
+    // After_login_header_GlobalModule,
     RouterModule.forChild(routes),
     CarouselModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
     MatSelectModule,
-    HeaderResponsiveModule,
+    // HeaderResponsiveModule,
     MatFormFieldModule,
     MatRadioModule,
     MatCheckboxModule,

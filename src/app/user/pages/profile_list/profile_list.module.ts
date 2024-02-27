@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Profile_listComponent } from './profile_list.component';
 import { RouterModule, Routes } from '@angular/router';
-import { LeftBar_after_loginModule } from '../../leftBar_after_login/leftBar_after_login.module';
-import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
-import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
+// import { LeftBar_after_loginModule } from '../../leftBar_after_login/leftBar_after_login.module';
+// import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
+// import { HeaderResponsiveModule } from '../../headerResponsive/headerResponsive.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollDirective } from 'src/app/Directives/scroll.directive';
 import {MatSelectModule} from '@angular/material/select';
@@ -20,15 +20,16 @@ const routes: Routes = [
   {
     path: '',
     component: Profile_listComponent,
+    data:{pageName:'profileList'}
   }
 ]
 
 @NgModule({
   imports: [
     CommonModule,
-    LeftBar_after_loginModule,
-    After_login_header_GlobalModule,
-    HeaderResponsiveModule,
+    // LeftBar_after_loginModule,
+    // After_login_header_GlobalModule,
+    // HeaderResponsiveModule,
     MatSelectModule,
     MatFormFieldModule,
     RouterModule.forChild(routes),

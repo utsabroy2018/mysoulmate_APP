@@ -3,9 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'', 
+    path:'user', 
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule)
-}
+},
+
+{
+  path:'home',
+  loadChildren:()=> import('./Auth/Auth.module').then((m) => m.AuthModule)
+},
+{ path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({

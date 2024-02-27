@@ -8,12 +8,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
+// import { After_login_header_GlobalModule } from '../../after_login_header_Global/after_login_header_Global.module';
 
 const routes: Routes = [
   {
     path: '',
     component: Partner_preferencesComponent,
+    data:{sidebar:false, pageName:'partnersPref'}
   }
 ]
 
@@ -27,7 +28,7 @@ const routes: Routes = [
     MatFormFieldModule,
     MatRadioModule,
     MatCheckboxModule,
-    After_login_header_GlobalModule,
+    // After_login_header_GlobalModule,
     RouterModule.forChild(routes)
   ],
   declarations: [Partner_preferencesComponent]

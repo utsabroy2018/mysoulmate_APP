@@ -349,11 +349,11 @@ accTypeAftPay:any;
   memberCheckFn(pay_flag:any){
 
     if(this.memberShipStatus.payStatus == 'Y'){
-      this.router.navigate(['/portfolio_view', pay_flag]);
+      this.router.navigate(['/user/portfolio_view', pay_flag]);
     }
 
     if(this.memberShipStatus.payStatus == 'N'){
-      this.router.navigate(['/paymentGetway']);
+      this.router.navigate(['/user/paymentGetway']);
     }
     
   }

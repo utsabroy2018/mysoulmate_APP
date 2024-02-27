@@ -51,7 +51,7 @@ export class PaymentGetwayComponent implements OnInit {
 
 
     if(this.memberShipStatus.payStatus == 'Y'){
-      this.router.navigate(['/user_dashboard']);
+      this.router.navigate(['/user/user_dashboard']);
       // 09/11/2023
     }
 
@@ -81,7 +81,7 @@ export class PaymentGetwayComponent implements OnInit {
 
   membership(event:any){
     
-    this.router.navigate(['/paymentdetails', btoa(event + '&'+ Math.random() * 100)]);
+    this.router.navigate(['/user/paymentdetails', btoa(event + '&'+ Math.random() * 100)]);
 
     
   }

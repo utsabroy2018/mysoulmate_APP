@@ -3237,4 +3237,12 @@ ul.brxe-list li::before {
     margin-right: 7px;}
 
 
+/* .headerSec__Outer{background: #f93354 !important;} */
+.headerSec__Outer .header_top{background: #f93354 !important;}
 
+
+
+  .portfolio_Search_list_res .thumbnailSec_res img.imgThum_res{margin: 0 auto ; 
+    width: 100% !important;
+    height: 430px;
+    display: inline-block;}

@@ -353,7 +353,7 @@ buttonColor: string = '#B2BEB5';
 
     this.partnerList = data.msg;
 
-    console.log(this.partnerList, 'partnerList');
+    // console.log(this.partnerList, 'partnerList');
     
 
 
@@ -578,7 +578,7 @@ buttonColor: string = '#B2BEB5';
 
   memberCheckFn(pay_flag:any){
 
-    this.router.navigate(['/portfolio_view', btoa(pay_flag)]);
+    this.router.navigate(['/user/portfolio_view', btoa(pay_flag)]);
 
     // if(this.memberShipStatus.payStatus == 'Y'){
     //   this.router.navigate(['/portfolio_view', pay_flag]);

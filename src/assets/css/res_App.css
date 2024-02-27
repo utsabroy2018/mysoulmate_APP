@@ -271,9 +271,9 @@
   .forDesktop{display: none;}
   .logoSec{width: 100%;}
 
-  .footerSec, .footerCopyright {
+  /* .footerSec, .footerCopyright {
     display: none;
-  }
+  } */
 
  .threeBoxWelcome,
   .stepSection{
@@ -437,7 +437,7 @@
   /* display: inline-flex; */
   /* align-items: flex-start; */
   display: block;
-  width: 100%; background: #ece9e4;}
+  width: 100%;}
 
   .portfolio_right{ padding:0 20px; }
 

@@ -540,7 +540,7 @@ export class User_portfolio_editComponent implements OnInit {
   }
 
   gotoViewProfile(userId:any){
-    this.router.navigate(['/portfolio_view', btoa(userId)]);
+    this.router.navigate(['/user/portfolio_view', btoa(userId)]);
   }
 
   onConfigChange() {
@@ -1236,10 +1236,10 @@ onChangeState(event:any) {
         // field_Music: this.user_hobbi?.fav_music,
         // field_Sports: this.user_hobbi?.sports,
         // field_Preferred_Movies: this.user_hobbi?.movie,
-        field_Hobbies_Interests: this.user_hobbi?.hobbies_interest != '' && this.user_hobbi?.hobbies_interest != 'undefined' ? this.user_hobbi.hobbies_interest : '',
-        field_Music: this.user_hobbi?.fav_music != '' && this.user_hobbi.fav_music != 'undefined' ? this.user_hobbi.fav_music : '',
-        field_Sports: this.user_hobbi?.sports!= '' && this.user_hobbi.sports != 'undefined' ? this.user_hobbi.sports : '',
-        field_Preferred_Movies: this.user_hobbi.movie != '' && this.user_hobbi.movie != 'undefined' ? this.user_hobbi.movie : '',
+        field_Hobbies_Interests: this.user_hobbi?.hobbies_interest != '' && this.user_hobbi?.hobbies_interest != 'undefined' ? this.user_hobbi?.hobbies_interest : '',
+        field_Music: this.user_hobbi?.fav_music != '' && this.user_hobbi?.fav_music != 'undefined' ? this.user_hobbi?.fav_music : '',
+        field_Sports: this.user_hobbi?.sports!= '' && this.user_hobbi?.sports != 'undefined' ? this.user_hobbi?.sports : '',
+        field_Preferred_Movies: this.user_hobbi?.movie != '' && this.user_hobbi?.movie != 'undefined' ? this.user_hobbi?.movie : '',
 
       
       })

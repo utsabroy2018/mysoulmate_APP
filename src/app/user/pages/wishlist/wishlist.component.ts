@@ -115,7 +115,7 @@ export class WishlistComponent implements OnInit {
 
   memberCheckFn(pay_flag:any){
 
-    this.router.navigate(['/portfolio_view', btoa(pay_flag)]);
+    this.router.navigate(['/user/portfolio_view', btoa(pay_flag)]);
 
     // if(this.memberShipStatus.payStatus == 'Y'){
     //   this.router.navigate(['/portfolio_view', pay_flag]);

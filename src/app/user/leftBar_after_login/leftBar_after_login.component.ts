@@ -233,7 +233,7 @@ export class LeftBar_after_loginComponent implements OnInit {
   }
 
   gotoViewProfile(userId:any){
-    this.router.navigate(['/portfolio_view', btoa(userId)]);
+    this.router.navigate(['/user/portfolio_view', btoa(userId)]);
   }
 
   generateAgeToList(e:any){
@@ -488,7 +488,7 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
   logout_Fnc(){
     localStorage.clear()
 
-    this.router.navigate(['home']);
+    this.router.navigate(['/home']);
     
   }
 
