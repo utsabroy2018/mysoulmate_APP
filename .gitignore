@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 
 *.zip
+resources/android/**/*

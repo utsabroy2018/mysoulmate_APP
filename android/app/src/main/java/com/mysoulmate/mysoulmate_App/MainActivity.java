@@ -1,4 +1,4 @@
-package com.example.app;
+package com.mysoulmate.mysoulmate_App;
 
 import com.getcapacitor.BridgeActivity;
 
