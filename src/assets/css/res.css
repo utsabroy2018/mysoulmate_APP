@@ -1053,13 +1053,13 @@
 
   .form-control,
   .field_outer_label mat-label {
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
 
   .mdc-text-field--no-label:not(.mdc-text-field--textarea) .mat-mdc-form-field-input-control.mdc-text-field__input,
   .mat-mdc-text-field-wrapper .mat-mdc-form-field-input-control {
     height: auto;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .registrationNxt_btn {
@@ -1658,7 +1658,7 @@ text-shadow: -1px 1px 2px #240e02;
   }
 
   .portfolio_form_fill_Top .title_sec h2 {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .portfolio_details_block .title_sec h2 button {
@@ -1771,7 +1771,7 @@ text-shadow: -1px 1px 2px #240e02;
   }
 
   .rashiChart .number {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .rashiChart_1 span.number,
@@ -1855,7 +1855,7 @@ text-shadow: -1px 1px 2px #240e02;
   .profile_view_Sumary_left .thum_details p span {
     width: auto;
     padding: 4px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .portfolio_view_block_sub ul.details_list li {
@@ -1885,12 +1885,12 @@ text-shadow: -1px 1px 2px #240e02;
   }
 
   .edit_portfolio_field_group_left {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .edit_portfolio_field_group_right {
     color: #1c2135;
-    font-size: 13px;
+    font-size: 15px;
   }
 
 
@@ -1899,7 +1899,7 @@ text-shadow: -1px 1px 2px #240e02;
 @media only screen and (max-width:360px) {
 
   .personal_sumary_right p a.verifyEmail {
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 0;
     padding: 3px 14px;
     display: inline flow-root list-item;

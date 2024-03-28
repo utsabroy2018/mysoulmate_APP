@@ -35,8 +35,10 @@
 	  <div class="centerChak rashiChart_padd">
 		  <div>
 			  <p><strong>{{this.user_basic_info_New?.u_name}}</strong></p>
-			  <p>{{this.user_basic_info_New?.dob | date:'mediumDate'}}</p>
-			  <p>{{this.user_basic_info_New?.dob | date:"shortTime"}}</p>
+			  <p>{{this.user_basic_info_New?.dob_date}}</p>
+			  <p>{{this.user_basic_info_New?.dob_time}}</p>
+			  <!-- <p>{{this.user_basic_info_New?.dob | date:'mediumDate'}}</p>
+			  <p>{{this.user_basic_info_New?.dob | date:"shortTime"}}</p> -->
 			  <p>{{userBirthLocation?.location_name}}</p>
 		  </div>
 	  </div>

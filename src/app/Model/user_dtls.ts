@@ -6,6 +6,8 @@ export interface user_basic_info {
     id: number
     profile_id: string
     dob: string
+    dob_date: string
+    dob_time: string
     email_id: string
     phone_no: number
     marital_status: string

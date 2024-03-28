@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.mysoulmate.mysoulmate_App',
+  appId: 'mysoulmate.co.in',
   appName: 'My Soulmate',
   webDir: 'www',
   server: {
