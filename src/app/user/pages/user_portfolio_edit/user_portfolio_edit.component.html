@@ -231,7 +231,9 @@
             <div class="edit_portfolio_field_group_right colonEnd">
               <ng-container *ngIf="user_basic_info_New?.dob">
 
-                {{user_basic_info_New?.dob | date:'mediumDate'}}, Time: {{user_basic_info_New?.dob | date:"HH:mm"}}  <strong class="notEdit">(Not Editable)</strong>
+                <!-- {{user_basic_info_New?.dob | date:'mediumDate'}}, Time: {{user_basic_info_New?.dob | date:"HH:mm"}}  <strong class="notEdit">(Not Editable)</strong> -->
+                {{user_basic_info_New?.dob_date}}, Time: {{user_basic_info_New?.dob_time}}  <strong class="notEdit">(Not Editable)</strong>
+
                 <strong> </strong>
               </ng-container>
             </div>
