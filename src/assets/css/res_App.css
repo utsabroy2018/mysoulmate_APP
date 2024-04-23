@@ -198,8 +198,8 @@
   .mat-horizontal-stepper-header-container{display: none !important;}
   
   
-  .portfolio_left_sub{border-radius:0 0 30px 30px; box-shadow: #b6b7b9 0px 0px 3px 1px;  margin: 0 0 15px 0; position: fixed; padding:20px 20px 25px 20px; z-index: 9;}
-  .innerMain_wraper{padding-top: 155px; padding-bottom: 115px;}
+  .portfolio_left_sub{border-radius:0 0 30px 30px; box-shadow: #b6b7b9 0px 0px 3px 1px;  margin: 0 0 15px 0; position: fixed; padding:10px 20px 25px 20px; z-index: 9;}
+  .innerMain_wraper{padding-top: 180px; padding-bottom: 115px;}
   .rightPhoto_res{margin-bottom: 0;}
 
   .personal_sumary_row{display: block;}
@@ -313,7 +313,7 @@
  
  ul.res_upgrade_btn li button{margin: 0;
   padding: 4px 6px;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 22px;
   border: #ff7c0b solid 1px;
   background: none;
@@ -473,11 +473,19 @@
 .offerPopupBox p span.bigFont {font-size: 20px;}
 /* =============== 080224 start ================ */
 
+.planeBox_subBox .priceSec_Sub span {font-size: 18px;}
+
+.planeBox_subBox .offerPriceDIv {width: 70px; height: 70px; background-size: cover; left: -23px; top: -8px;}
+.planeBox_subBox .offerPriceDIv .percent {font-size: 14px; line-height: 15px;}
+
+.planeSec {margin-bottom: 0;}
+.planeSec_afterLog {padding-bottom: 0;}
+
 }
 
 
 @media only screen and (max-width:530px) {
-  .innerMain_wraper{padding-top: 135px; padding-bottom: 100px;}
+  .innerMain_wraper{padding-top: 150px; padding-bottom: 100px;}
   .profileView_Res{padding-top: 170px;}
   /* .innerMain_wraper_register{padding-top: 135px; padding-bottom: 115px;} */
 

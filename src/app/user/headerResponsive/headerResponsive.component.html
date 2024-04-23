@@ -2,6 +2,8 @@
 <!-- <div *ngIf="hideOtheres == true; then showDiv else hideDiv">
   here is ignored</div> -->
 
+  
+
   <div *ngIf="hideOtheres == true; then hideDiv else hideDiv">
     here is ignored</div>
     
@@ -71,14 +73,15 @@
 
     <div class="portfolio_left_sub">
 
-      
+      <ng-container *ngIf="paymentDetails?.length > 0 ? (paymentDetails[0]?.discount > 0 && paymentDetails[1]?.discount > 0 && paymentDetails[2]?.discount > 0) : false;">
+        <div class="offerShow"><a routerLink="/user/paymentGetway"><span>{{paymentDetails[0]?.discount}}% OFF</span> on subscriptions Apr 10th - 28th.</a></div>
+        </ng-container>
       
       <div class="profile_photo">
         
-        <div class="avatar">
-    
-          <button hidden id="logo_crop_new" mat-raised-button class="btn btn-success" (click)="open_crop_modal()"></button>
-    <input type="file" (change)="section_img_upload($event)" class="uploadImgGal_left" />
+      <div class="avatar">
+      <button hidden id="logo_crop_new" mat-raised-button class="btn btn-success" (click)="open_crop_modal()"></button>
+      <input type="file" (change)="section_img_upload($event)" class="uploadImgGal_left" />
           
             <!-- <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
               <mat-icon class="material-icons">home</mat-icon>

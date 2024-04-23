@@ -520,7 +520,8 @@ return this.progressValue = Math.round(incrementItem + defaultValue);
       this.is_loader_Thum = false;
 
       // localStorage.setItem("​​​profile_code", this.userData_1.profile_id);
-      this.sds.setLocalSecrectData({​​​profile_code: this.userData_1.profile_id})
+      this.sds.setLocalSecrectData({​​​profile_code: this.userData_1.profile_id});
+      this.is_loader = false;
       
 //  Use Subject Behaibair For load time Show User Detail On the Header Start____________
       // this.service.afterLoginUserDetSend.next(this.userData_1);

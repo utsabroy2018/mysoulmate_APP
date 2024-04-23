@@ -2884,10 +2884,17 @@ ul.msgServer li{margin: 0 0 5px 0;
 /* ========================== 08022024 Offer Start =========================== */
 .planeBox_subBox{position: relative;}
 
-.planeBox_subBox .offerImg{position: absolute; left: -30px; top: -30px;}
+/* .planeBox_subBox .offerImg{position: absolute; left: -30px; top: -30px;}
 .planeBox_subBox .priceSec_Sub span.lineThrough{font-size: 18px; font-weight: 300; position: relative; margin-right: 10px; opacity: .9;}
-.planeBox_subBox .priceSec_Sub span.lineThrough:after {position: absolute; left: 0; top: 50%; height: 1px; background: #fff; content: ""; width: 100%; display: block;}
+.planeBox_subBox .priceSec_Sub span.lineThrough:after {position: absolute; left: 0; top: 50%; height: 1px; background: #fff; content: ""; width: 100%; display: block;} */
 
+.planeBox_subBox .offerPriceDIv{position: absolute; left: -30px; top: -30px; width: 99px; height: 98px; background: url("../images/offer_price_Dynamic.png") no-repeat;
+  display: flex; align-items: center;}
+.planeBox_subBox .offerPriceDIv .percent{font-size: 20px; color: #fff; font-weight: 900; margin: 0 auto; line-height: 20px; text-shadow: 1px 1px 3px #9d6925;}
+.planeBox_subBox .offerPriceDIv .percent span{display: block;}
+/* .planeBox_subBox .offerImg{position: absolute; left: -30px; top: -30px;}
+.planeBox_subBox .priceSec_Sub span.lineThrough{font-size: 18px; font-weight: 300; position: relative; margin-right: 10px; opacity: .9;}
+.planeBox_subBox .priceSec_Sub span.lineThrough:after {position: absolute; left: 0; top: 50%; height: 1px; background: #fff; content: ""; width: 100%; display: block;} */
 
 
 .offerPopupBox_Background{background: rgba(0,0,0,.50); position: fixed; left: 0; top: 0; width: 100%; height: 100%;}
@@ -3025,18 +3032,19 @@ ul.msgServer li{margin: 0 0 5px 0;
 .offerShow{background: #ca2141;
   color: #fff;
   text-align: center;
-  padding: 7px 15px;
-  font-size: 15px;
+  padding: 4px 15px;
+  font-size: 12px;
   width: 100%;
-  line-height: 16px;}
-  .offerShow a{color: #fff; font-size: 15px; text-decoration: none;}
+  line-height: 16px;
+  margin-bottom: 10px; border-radius: 5px;}
+  .offerShow a{color: #fff; font-size: 12px; text-decoration: none;}
 
 .offerShow a span{color: #000000;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 900;
   background: #ffb400;
   display: inline-block;
-  padding: 4px 5px;
+  padding:2px 2px;
   margin: 0 3px;}
 
 
@@ -3046,10 +3054,10 @@ ul.msgServer li{margin: 0 0 5px 0;
     font-size: 15px;
     width: 100%;
     line-height: 16px;}
-    .offerShow_respons a{color: #fff; font-size: 15px; text-decoration: none;}
+    .offerShow_respons a{color: #fff; font-size: 12px; text-decoration: none;}
   
   .offerShow_respons a span{color: #000000;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 900; display: inline-block;
     background: #ffb400;
     display: inline-block !important;

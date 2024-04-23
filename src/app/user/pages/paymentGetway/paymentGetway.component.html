@@ -59,6 +59,15 @@
 						<img src="assets/images/offer_price.png" alt="" class="offerImg" />
 						</ng-container> -->
 
+						<ng-container *ngIf="item.discount > 0">
+							<div class="offerPriceDIv">
+								<div class="percent">
+									{{item.discount}}% <span>OFF</span>
+								</div>
+							<!-- <img src="assets/images/offer_price.png" alt="" class="offerImg" /> -->
+							</div>	
+							</ng-container>
+
 						<h3>{{item.pay_name}}</h3>
 						<div class="priceSec">
 						<div class="priceSec_Sub">
