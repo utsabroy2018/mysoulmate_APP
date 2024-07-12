@@ -304,7 +304,7 @@ color: #6d6f73;}
 .topNavSec ul.afterLogin_right li .dropdown_menu_cus .user_first_sec p span{margin: 0 5px;}
 .topNavSec ul.afterLogin_right li .dropdown_menu_cus .user_first_sec p a{color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   background: #ff7c0b;
   padding: 4px 8px;
   line-height: 16px;
@@ -572,12 +572,12 @@ position: absolute; top:0; right: 0;}
 
 .personal_sumary_right p a.verifyEmail{color: #fff;
   background: #d42c3d;
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 10px;
   padding: 4px 14px;
   border-radius: 50px;}
 .personal_sumary_right p span.verifiedObj{color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 6px;
   padding: 0;}
   .personal_sumary_right p a.verifyEmail:hover{color: #fff;}
@@ -1035,7 +1035,7 @@ right: 0;}
   .astro_popup_sec h3.rightPercan span{margin-left: 10px;
     font-weight: 900;
     padding: 2px 4px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 3px;
     /* background: rgb(71, 125, 18); */
     color: #fff;}
@@ -1080,14 +1080,14 @@ ul.partnerDet_Astro li{
 
 ul.partnerDet_Astro li .title{margin: 16px 12px 0;
   color: #84848d;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 20px; padding-bottom: 10px;
 }
 
 ul.partnerDet_Astro li .descrip{margin: 0 12px 16px;
   color: #28354f;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 20px; padding-bottom: 0;
 }
@@ -1140,7 +1140,7 @@ ul.partnerDet_Astro li .descrip{margin: 0 12px 16px;
 
 .astro_details_row{width: 100%; margin-bottom: 15px; display: inline-block;}
 .astro_details_row .title{color: #72727d;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 19.6px;
   margin: 0; padding-bottom: 8px;}
 .astro_details_row .descrip{color: #28354f;
@@ -1249,7 +1249,7 @@ margin-bottom: 40px;}
 .esearch_field_group_full input.search {border: none;
   background: #d42c3d;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   padding: 6px 15px;
   margin-top: 10px;
@@ -1262,7 +1262,7 @@ margin-bottom: 40px;}
   .esearch_field_group_full input.clear{border: none;
     background: #0d2048;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     padding: 6px 15px;
     margin-top: 10px;
@@ -1308,7 +1308,7 @@ margin-bottom: 40px;}
 .fabourite_user_list:last-child{margin-bottom: 0; padding-bottom: 0; border-bottom:none;}
 .fabourite_user_list_thum{width: 58px; height: 58px; border-radius: 50%; overflow: hidden; margin-right: 14px;}
 .fabourite_user_list_descrip{display: flex; align-items: center;}
-.fabourite_user_list_descrip p{margin: 0; padding: 0; color: #0d2048; font-size: 14px; line-height: 19px;}
+.fabourite_user_list_descrip p{margin: 0; padding: 0; color: #0d2048; font-size: 15px; line-height: 19px;}
 
 
 
@@ -1342,7 +1342,7 @@ margin-bottom: 40px;}
   border: #477d12 solid 2px;
   color: #477d12;
   border-radius: 7px;
-  font-size: 14px;
+  font-size: 15px;
   padding: 0 3px;
   line-height: 12px;
 } 
@@ -1353,7 +1353,7 @@ margin-bottom: 40px;}
   border: #ff7c0b solid 2px;
   color: #ff7c0b;
   border-radius: 7px;
-  font-size: 14px;
+  font-size: 15px;
   padding: 0 3px;
   line-height: 12px;
 } 
@@ -1411,7 +1411,7 @@ margin-bottom: 40px;}
   padding: 6px 17px;
   border-radius: 50px 0 50px 50px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 15px;
   display: inline-block;
   line-height: 15px;
@@ -1465,8 +1465,8 @@ margin-bottom: 40px;}
   max-width: 500px;
   width: 100%; font-size:15px;
 }
-.field_outer_label mat-label{font-size: 14px;}
-.field_outer_label .mat-mdc-form-field-flex{font-size: 14px;}
+.field_outer_label mat-label{font-size: 15px;}
+.field_outer_label .mat-mdc-form-field-flex{font-size: 15px;}
 
 .example-full-width {
   width: 100%;
@@ -1515,7 +1515,7 @@ ul {
   text-align: center; background: #e9d7af; color: #a7231b;}
 
   .errorMsg_login {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: -16px;}
 
 
@@ -1653,7 +1653,7 @@ ul {
   padding: 6px 17px;
   border-radius: 50px 0 50px 50px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 15px;
   display: inline-block;
   line-height: 15px;
@@ -1679,7 +1679,7 @@ ul {
     padding:8px 17px;
     border-radius: 50px 0 50px 50px;
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 0;
     display: inline-block;
     line-height: 15px;
@@ -1692,7 +1692,7 @@ ul {
     padding:8px 17px;
     border-radius: 50px 0 50px 50px;
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 0;
     display: inline-block;
     line-height: 15px; margin-right: 15px;
@@ -1741,14 +1741,14 @@ ul.cropBtnTop li button{position: absolute;
   height: 53px; border-radius: 3px;}
 
 .browse_BotsTrap{background: #fafafa;
-  padding: 13px 10px; font-size: 14px;
+  padding: 13px 10px; font-size: 15px;
   height: 53px; border-radius: 3px; border-bottom: #ebebeb solid 1px;}
 
   .mat-mdc-option .mdc-list-item__primary-text {font-size: 15px !important;}
 
 
   .profile_match_percentage_left{max-width: 100%; width: 100%; text-align: center; margin-top: 17px;}
-  .profile_match_percentage_left p{display: block; color: #0d2048; font-weight: 700; margin: 0; padding: 0; font-size: 14px;}
+  .profile_match_percentage_left p{display: block; color: #0d2048; font-weight: 700; margin: 0; padding: 0; font-size: 15px;}
   
   .percentage_bar_left{height: 9px; border-radius: 10px; width:100%; max-width: 100%; background: #dee1f0; overflow: hidden;}
   .percentage_bar_inner_green_left{background: #477d12; height: 9px; width:0%;
@@ -1844,9 +1844,9 @@ ul.cropBtnTop li button{position: absolute;
 
 .shortin_product_Main{max-width: 100%; width: 100%; display: flex;}
 .shortin_product{max-width: 300px; width: 100%; float: right; margin: 0 0 0 auto;}
-.shortin_product .mat-mdc-form-field-type-mat-select.mat-form-field-appearance-fill .mat-mdc-floating-label {font-size: 14px;}
+.shortin_product .mat-mdc-form-field-type-mat-select.mat-form-field-appearance-fill .mat-mdc-floating-label {font-size: 15px;}
 .shortin_product .mat-mdc-option {min-height: 42px;}
-.shortin_product .mat-mdc-option .mdc-list-item__primary-text {font-size: 14px !important;}
+.shortin_product .mat-mdc-option .mdc-list-item__primary-text {font-size: 15px !important;}
 .pageneTion{padding-right: 15px;   margin: 0 auto 0 0;}
 
 
@@ -2035,7 +2035,7 @@ ul.cropBtnTop li button{position: absolute;
     background: #bf5e23;
     border-radius: 3px;
     margin-right: 6px;
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     padding: 4px 11px;
     font-family: 'Cabin', sans-serif;
@@ -2124,7 +2124,7 @@ ul.cropBtnTop li button{position: absolute;
       background: #bf5e23;
       border-radius: 3px;
       margin-right: 6px;
-      font-size: 14px;
+      font-size: 15px;
       color: #fff;
       padding: 4px 11px;
       font-family: 'Cabin', sans-serif;
@@ -2187,7 +2187,7 @@ ul.cropBtnTop li button{position: absolute;
 .deActiveUser_Msg_Sub{padding: 2px 4px;
   color: #fff;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #d42c3d;
   margin-bottom: 15px;
   font-weight: 900;
@@ -2198,7 +2198,7 @@ ul.cropBtnTop li button{position: absolute;
 .deActiveUser_Msg_otp_Sub{padding: 2px 4px;
   color: #fff;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #d42c3d;
   margin-bottom: 15px;
   font-weight: 900;
@@ -2249,7 +2249,7 @@ a.viewProlink{color: #fff !important;}
 ul.msgServer{margin: 0; padding: 0 0 0 25px; list-style-type: none;}
 ul.msgServer li{margin: 0 0 5px 0;
   background: #ffe6e9;
-  font-size: 14px;
+  font-size: 15px;
   padding: 5px 8px;
   line-height: 14px;
   color: #000;}
@@ -2330,7 +2330,7 @@ ul.msgServer li{margin: 0 0 5px 0;
       border-radius: 50px;
       color: #fff;
       line-height: 17px;
-      font-size: 14px;
+      font-size: 15px;
       cursor: pointer;
       display: block;
       text-align: center;
@@ -2397,7 +2397,7 @@ ul.msgServer li{margin: 0 0 5px 0;
     
   .upgrade_Lock:hover .lockPopupHover{border: #ccc solid 1px; padding: 10px; position: absolute; display: block;}
   .upgrade_Lock:hover .lockPopupHover p {color: #414244;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 15px;
     margin: 0 0 5px 0;
     padding: 0;}
@@ -2634,7 +2634,7 @@ ul.msgServer li{margin: 0 0 5px 0;
 
   .portfolio_Search_list_descrip_top_wish ul li.fevourit{color: #ef3a41; align-items: center; padding-right: 0; margin: 0 0 0 auto;}
 
-  .portfolio_Search_list_descrip_top_wish ul li.fevourit .removeFevarit_btn{font-size: 14px;
+  .portfolio_Search_list_descrip_top_wish ul li.fevourit .removeFevarit_btn{font-size: 15px;
     background: #ef3a41;
     border-radius: 50px 0 50px 50px;
     color: #fff;
@@ -2643,7 +2643,7 @@ ul.msgServer li{margin: 0 0 5px 0;
     line-height: 17px;
     display: flex;
     font-weight: 700; align-items: center;}
-  .portfolio_Search_list_descrip_top_wish ul li.fevourit .removeFevarit_btn i{margin-right: 5px; font-size: 14px;}
+  .portfolio_Search_list_descrip_top_wish ul li.fevourit .removeFevarit_btn i{margin-right: 5px; font-size: 15px;}
 
   
   .portfolio_Search_list_descrip_wish{width: 100%; border-radius: 10px; margin:0;}
@@ -2670,7 +2670,7 @@ ul.msgServer li{margin: 0 0 5px 0;
       padding:8px 17px;
       border-radius: 50px 0 50px 50px;
       color: #fff;
-      font-size: 14px;
+      font-size: 15px;
       margin-top: 0;
       display: inline-block;
       line-height: 15px;
@@ -2719,7 +2719,7 @@ ul.msgServer li{margin: 0 0 5px 0;
 .lockPopupHover{border: #ccc solid 1px; border-radius: 5px; padding: 10px; position:relative; display: block; background-color: #fff; width: max-content; top: 8px;}
 .lockPopupHover p {color: #414244;
       
-      font-size: 14px;
+      font-size: 15px;
       line-height: 15px;
       margin: 0 0 5px 0;
       padding: 0;}
@@ -2780,7 +2780,7 @@ ul.msgServer li{margin: 0 0 5px 0;
 .portfolio_Search_list_res .thumbnailSec_Descrip_res{position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0, .5); padding: 15px 15px;}
 
 .verificationPartner_res{margin-bottom: 8px; position: absolute; top: 12px; left: 11px;}
-.verificationPartner_res .verifi_btn_res{font-size: 14px;
+.verificationPartner_res .verifi_btn_res{font-size: 15px;
   background: #fff;
   border-radius: 50px;
   color: #5377d8;
@@ -2791,7 +2791,7 @@ ul.msgServer li{margin: 0 0 5px 0;
   font-weight: 700;}
 .verificationPartner_res .verifi_btn_res img{margin-right: 5px; width: 13px;}
 
-.verificationPartner_res .notVerifi_btn_res{font-size: 14px;
+.verificationPartner_res .notVerifi_btn_res{font-size: 15px;
   background: #fff;
   border-radius: 50px;
   color: #ef3a41;
@@ -2802,8 +2802,8 @@ ul.msgServer li{margin: 0 0 5px 0;
   font-weight: 700;}
 .verificationPartner_res .notVerifi_btn_res img{margin-right: 5px; width: 13px;}
 
-.thumbnailSec_Descrip_res h3{font-size: 14px; font-weight: 700; color: #fff; padding-bottom: 3px;}
-.thumbnailSec_Descrip_res p{font-size: 14px; color: #fff; line-height: 19px;}
+.thumbnailSec_Descrip_res h3{font-size: 15px; font-weight: 700; color: #fff; padding-bottom: 3px;}
+.thumbnailSec_Descrip_res p{font-size: 15px; color: #fff; line-height: 19px;}
 .thumbnailSec_button_res{padding: 15px;}
 
 .thumbnailSec_button_res p{color: #0d2048; font-size: 15px; text-align: center;}
@@ -2821,7 +2821,7 @@ ul.msgServer li{margin: 0 0 5px 0;
   padding:10px 17px;
   border-radius: 50px;
   color: #fff !important; text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 0; width: 100%;
   display: inline-block; border: none;
   line-height: 15px; margin-top: 12px;}
@@ -2868,7 +2868,7 @@ ul.msgServer li{margin: 0 0 5px 0;
   margin-left: -15px;}
 
 .removeFevarit_res{margin-bottom: 8px; position: absolute; top: 12px; right:11px;}
-.removeFevarit_res .removeFevarit_btn{font-size: 14px;
+.removeFevarit_res .removeFevarit_btn{font-size: 15px;
   background: #ef3a41;
   border-radius: 50px;
   color: #fff;
@@ -2877,17 +2877,24 @@ ul.msgServer li{margin: 0 0 5px 0;
   line-height: 17px;
   display: flex;
   font-weight: 700; align-items: center;}
-.removeFevarit_res .removeFevarit_btn i{margin-right: 5px; font-size: 14px;}
+.removeFevarit_res .removeFevarit_btn i{margin-right: 5px; font-size: 15px;}
 
 
 
 /* ========================== 08022024 Offer Start =========================== */
 .planeBox_subBox{position: relative;}
 
-.planeBox_subBox .offerImg{position: absolute; left: -30px; top: -30px;}
+/* .planeBox_subBox .offerImg{position: absolute; left: -30px; top: -30px;}
 .planeBox_subBox .priceSec_Sub span.lineThrough{font-size: 18px; font-weight: 300; position: relative; margin-right: 10px; opacity: .9;}
-.planeBox_subBox .priceSec_Sub span.lineThrough:after {position: absolute; left: 0; top: 50%; height: 1px; background: #fff; content: ""; width: 100%; display: block;}
+.planeBox_subBox .priceSec_Sub span.lineThrough:after {position: absolute; left: 0; top: 50%; height: 1px; background: #fff; content: ""; width: 100%; display: block;} */
 
+.planeBox_subBox .offerPriceDIv{position: absolute; left: -30px; top: -30px; width: 99px; height: 98px; background: url("../images/offer_price_Dynamic.png") no-repeat;
+  display: flex; align-items: center;}
+.planeBox_subBox .offerPriceDIv .percent{font-size: 20px; color: #fff; font-weight: 900; margin: 0 auto; line-height: 20px; text-shadow: 1px 1px 3px #9d6925;}
+.planeBox_subBox .offerPriceDIv .percent span{display: block;}
+/* .planeBox_subBox .offerImg{position: absolute; left: -30px; top: -30px;}
+.planeBox_subBox .priceSec_Sub span.lineThrough{font-size: 18px; font-weight: 300; position: relative; margin-right: 10px; opacity: .9;}
+.planeBox_subBox .priceSec_Sub span.lineThrough:after {position: absolute; left: 0; top: 50%; height: 1px; background: #fff; content: ""; width: 100%; display: block;} */
 
 
 .offerPopupBox_Background{background: rgba(0,0,0,.50); position: fixed; left: 0; top: 0; width: 100%; height: 100%;}
@@ -3025,18 +3032,19 @@ ul.msgServer li{margin: 0 0 5px 0;
 .offerShow{background: #ca2141;
   color: #fff;
   text-align: center;
-  padding: 7px 15px;
-  font-size: 15px;
+  padding: 4px 15px;
+  font-size: 12px;
   width: 100%;
-  line-height: 16px;}
-  .offerShow a{color: #fff; font-size: 15px; text-decoration: none;}
+  line-height: 16px;
+  margin-bottom: 10px; border-radius: 5px;}
+  .offerShow a{color: #fff; font-size: 12px; text-decoration: none;}
 
 .offerShow a span{color: #000000;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 900;
   background: #ffb400;
   display: inline-block;
-  padding: 4px 5px;
+  padding:2px 2px;
   margin: 0 3px;}
 
 
@@ -3046,10 +3054,10 @@ ul.msgServer li{margin: 0 0 5px 0;
     font-size: 15px;
     width: 100%;
     line-height: 16px;}
-    .offerShow_respons a{color: #fff; font-size: 15px; text-decoration: none;}
+    .offerShow_respons a{color: #fff; font-size: 12px; text-decoration: none;}
   
   .offerShow_respons a span{color: #000000;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 900; display: inline-block;
     background: #ffb400;
     display: inline-block !important;
@@ -3216,6 +3224,7 @@ ul.brxe-list li::before {
 
 
 .sectionTitle_Res{width: 100%; display: flex;}
+
 .sectionTitle_Res h2{margin: 0 auto 0 0;
   font-size: 18px;
   color: #0d2048;
@@ -3224,15 +3233,17 @@ ul.brxe-list li::before {
   padding-right: 45px;
   padding-bottom: 3px;
   font-weight: 700;}
+
 .sectionTitle_Res .backBtn{margin: 0 15px 0 0;
-  padding: 5px 8px;
+  padding: 7px 12px;
   color: #fff;
   background: #d42c3d;
   border: none;
   line-height: 15px;
-  font-size: 15px;
+  font-size: 16px;
   border-radius: 3px;
   display: flex;}
+
   .sectionTitle_Res .backBtn img{width: 18px;
     margin-right: 7px;}
 

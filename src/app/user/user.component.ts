@@ -50,12 +50,12 @@ export class UserComponent implements OnInit, AfterViewInit {
     
     this.service.sidebar_Check.subscribe(res=>{
       this.sidebarCheck = res;
-      console.log(this.sidebarCheck , 'this.sidebarCheck ');
+      // console.log(this.sidebarCheck , 'this.sidebarCheck ');
       
     })
 
     this.service.pageNameCheck.subscribe(res=>{
-      console.log(res, 'ressssssssss'); 
+      // console.log(res, 'ressssssssss'); 
       this.pageNameCheck__ = res;
     })
 

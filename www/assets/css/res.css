@@ -1,373 +1,6 @@
-@media only screen and (max-width:1300px) {
-  .formStep_group_2_1 .row {
-    display: block;
-  }
 
-  .formStep_group_2_1 .form_group_custom .col-sm-3 {
-    max-width: 50%;
-    width: 100%;
-    float: left;
-    margin-bottom: 15px;
-  }
 
-  .formStep_group_2_1 .form_group_custom .col-sm-3 .field_outer_label {
-    height: 53px;
-  }
-}
-
-@media only screen and (max-width:1100px) {
-
-  .profile_view_Sumary_left {
-    width: 45%;
-  }
-
-  .profile_view_Sumary_right {
-    width: 55%;
-  }
-
-  .profile_view_Sumary_left .thum {
-    max-width: 127px;
-    width: 100%;
-    height: auto;
-  }
-
-  .profile_view_Sumary_left .thum img {
-    width: 127px;
-    max-width: 127px;
-    height: 127px;
-  }
-
-  .profile_view_Sumary_left .thum_details h3 {
-    font-size: 22px;
-  }
-
-  .profile_view_Sumary_left .thum_details p {
-    font-size: 15px;
-    margin-bottom: 10px;
-    line-height: 23px;
-  }
-
-}
-
-
-
-
-@media only screen and (max-width:990px) {
-  .headerSec_rightForm h1 {
-    font-size: 45px;
-    line-height: 40px;
-  }
-
-  .headerSec_rightForm h1 span {
-    font-size: 28px;
-  }
-
-  .headerSec_rightForm p {
-    font-size: 15px;
-    margin: 0 0 25px 0;
-  }
-
-  .welcomeSec_left h2 {
-    font-size: 38px;
-    line-height: 40px;
-  }
-
-  .welcomeSec_left h2 span {
-    font-size: 22px;
-  }
-
-  .welcomeSec_left p {
-    font-size: 15px;
-    margin: 0 0 20px 0;
-  }
-
-  .horosCopBox h3 {
-    font-size: 25px;
-    margin: 0 0 12px 0;
-  }
-
-  .horosCopBox p {
-    font-size: 15px;
-    margin: 0 0 20px 0;
-  }
-
-  .planeSec_text h2 {
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    line-height: 35px;
-  }
-
-  .planeBox_subBox h3 {
-    font-size: 20px;
-    margin-bottom: 14px;
-  }
-
-  .planeBox_subBox .priceSec_Sub {
-    font-size: 15px;
-  }
-
-  .planeBox_subBox .listSec ul li {
-    font-size: 14px;
-    margin-bottom: 1px;
-  }
-
-  .planeBox_subBox .selectBtn a {
-    font-size: 14px;
-  }
-
-
-  .headerSec_leftImg,
-  .headerSec_rightForm {
-    width: 50%;
-  }
-
-  .planeBox {
-    padding: 0px 22px;
-  }
-
-  .portfolio_slide .imgSec {
-    width: 6%;
-  }
-
-  .portfolio_slide .content_right {
-    width: 93%;
-  }
-
-  .portfolio_slide .content_right h2 {
-    font-size: 16px;
-  }
-
-  .portfolio_slide .content_right a {
-    font-size: 14px;
-    padding: 4px 20px;
-  }
-
-  .portfolio_form_fill .title_sec_Id h2 {
-    font-size: 20px;
-  }
-
-  .portfolio_form_fill .title_sec_Id p {
-    font-size: 16px;
-  }
-
-  .profile_view_Sumary_left .thum {
-    max-width: 110px;
-    width: 100%;
-    height: auto;
-  }
-
-  .profile_view_Sumary_left .thum img {
-    width: 110px;
-    max-width: 110px;
-    height: 110px;
-  }
-
-  .profile_view_Sumary_left {
-    width: 40%;
-  }
-
-  .profile_view_Sumary_right {
-    width: 60%;
-  }
-
-
-}
-
-
-
-@media only screen and (max-width:850px) {
-  .headerSec_leftImg {
-    width: 50%;
-  }
-
-  .headerSec_rightForm {
-    width: 50%;
-  }
-
-  .collage_img {
-    top: -5%;
-    max-width: 350px;
-  }
-
-  .threeBoxWelcome h2 {
-    font-size: 30px;
-  }
-
-  .matrimoni_box h3 {
-    font-size: 16px;
-    min-height: 47px;
-  }
-
-  .matrimoni_box {
-    min-height: 286px;
-  }
-
-  .stepSection h2 span {
-    font-size: 22px;
-  }
-
-  .stepSection h2 {
-    font-size: 30px;
-    margin: 0 0 24px 0;
-    line-height: 33px;
-  }
-
-  .planeBox {
-    padding: 0px 22px;
-  }
-
-  .dataSec {
-    font-size: 14px;
-  }
-
-  .innerMain_wraper_dashboard .col-sm-3 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .innerMain_wraper_dashboard .col-sm-9 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .innerMain_wraper_ProfileEdit .portfolio_edit_right {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .innerMain_wraper_ProfileEdit .portfolio_edit_left {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .myMembership_wraper .col-sm-3 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .myMembership_wraper .col-sm-9 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .photo_gallery_wraper .col-sm-3 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .photo_gallery_wraper .col-sm-9 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .settings_wraper .col-sm-3 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .settings_wraper .col-sm-9 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .idVerify_wraper .col-sm-3 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .idVerify_wraper .col-sm-9 {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .partner_wraper .col-sm-3 {
-    max-width: 100%;
-    width: 100%;
-    flex: inherit;
-  }
-
-  .partner_wraper .col-sm-9 {
-    max-width: 100%;
-    width: 100%;
-    flex: inherit;
-  }
-
-  .partner_wraper .blue_leftSec_custom {
-    margin-bottom: 20px;
-  }
-
-  .blue_leftSec {
-    height: inherit;
-    margin-bottom: 0;
-  }
-
-  .edit_portfolio_field_group_main .form-group .col-sm-3 {
-    max-width: 25%;
-  }
-
-  .rashiChart {
-    max-width: 530px;
-    height: 530px;
-  }
-
-  .title_sec_main {
-    margin-bottom: 10px;
-  }
-
-  .profile_view_Sumary_left {
-    width: 100%;
-  }
-
-  .profile_view_Sumary_right {
-    width: 100%;
-    display: inline-block;
-    margin-top: 15px;
-  }
-
-  .profile_view_Sumary {
-    display: inline-block;
-  }
-
-  .profile_view_Sumary {
-    padding: 20px 20px 12px 20px;
-  }
-
-  .profile_view_Sumary_left .thum {
-    max-width: 80px;
-    width: 100%;
-    height: auto;
-  }
-
-  .profile_view_Sumary_left .thum img {
-    width: 80px;
-    max-width: 80px;
-    height: 80px;
-  }
-
-  .profile_view_Sumary_left .thum_details h3 {
-    font-size: 20px;
-  }
-
-  .profile_view_Sumary_left .thum_details p {
-    font-size: 14px;
-    margin-bottom: 5px;
-    line-height: 20px;
-  }
-
-  .profile_view_Sumary_right ul li {
-    line-height: 19px;
-    font-size: 14px;
-  }
-
-  .portfolio_view_block .title_sec h2 {
-    font-size: 19px;
-  }
-
-}
-
-/* 767px change to 1024px */
-
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:2796px) {
 
   /* New responsive Start  */
   /* .headerSec .header_top{padding: 12% 0 60px 0;}
@@ -1053,13 +686,13 @@
 
   .form-control,
   .field_outer_label mat-label {
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
 
   .mdc-text-field--no-label:not(.mdc-text-field--textarea) .mat-mdc-form-field-input-control.mdc-text-field__input,
   .mat-mdc-text-field-wrapper .mat-mdc-form-field-input-control {
     height: auto;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .registrationNxt_btn {
@@ -1158,6 +791,381 @@ text-shadow: -1px 1px 2px #240e02;
 
 
 }
+
+
+
+@media only screen and (max-width:1300px) {
+  .formStep_group_2_1 .row {
+    display: block;
+  }
+
+  .formStep_group_2_1 .form_group_custom .col-sm-3 {
+    max-width: 50%;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  .formStep_group_2_1 .form_group_custom .col-sm-3 .field_outer_label {
+    height: 53px;
+  }
+}
+
+
+
+@media only screen and (max-width:1100px) {
+
+  .profile_view_Sumary_left {
+    width: 45%;
+  }
+
+  .profile_view_Sumary_right {
+    width: 55%;
+  }
+
+  .profile_view_Sumary_left .thum {
+    max-width: 127px;
+    width: 100%;
+    height: auto;
+  }
+
+  .profile_view_Sumary_left .thum img {
+    width: 127px;
+    max-width: 127px;
+    height: 127px;
+  }
+
+  .profile_view_Sumary_left .thum_details h3 {
+    font-size: 22px;
+  }
+
+  .profile_view_Sumary_left .thum_details p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 23px;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width:990px) {
+  .headerSec_rightForm h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .headerSec_rightForm h1 span {
+    font-size: 28px;
+  }
+
+  .headerSec_rightForm p {
+    font-size: 15px;
+    margin: 0 0 25px 0;
+  }
+
+  .welcomeSec_left h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .welcomeSec_left h2 span {
+    font-size: 22px;
+  }
+
+  .welcomeSec_left p {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+  }
+
+  .horosCopBox h3 {
+    font-size: 25px;
+    margin: 0 0 12px 0;
+  }
+
+  .horosCopBox p {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+  }
+
+  .planeSec_text h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    line-height: 35px;
+  }
+
+  .planeBox_subBox h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .planeBox_subBox .priceSec_Sub {
+    font-size: 15px;
+  }
+
+  .planeBox_subBox .listSec ul li {
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+
+  .planeBox_subBox .selectBtn a {
+    font-size: 14px;
+  }
+
+
+  .headerSec_leftImg,
+  .headerSec_rightForm {
+    width: 50%;
+  }
+
+  .planeBox {
+    padding: 0px 22px;
+  }
+
+  .portfolio_slide .imgSec {
+    width: 6%;
+  }
+
+  .portfolio_slide .content_right {
+    width: 93%;
+  }
+
+  .portfolio_slide .content_right h2 {
+    font-size: 16px;
+  }
+
+  .portfolio_slide .content_right a {
+    font-size: 14px;
+    padding: 4px 20px;
+  }
+
+  .portfolio_form_fill .title_sec_Id h2 {
+    font-size: 20px;
+  }
+
+  .portfolio_form_fill .title_sec_Id p {
+    font-size: 16px;
+  }
+
+  .profile_view_Sumary_left .thum {
+    max-width: 110px;
+    width: 100%;
+    height: auto;
+  }
+
+  .profile_view_Sumary_left .thum img {
+    width: 110px;
+    max-width: 110px;
+    height: 110px;
+  }
+
+  .profile_view_Sumary_left {
+    width: 40%;
+  }
+
+  .profile_view_Sumary_right {
+    width: 60%;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width:850px) {
+  .headerSec_leftImg {
+    width: 50%;
+  }
+
+  .headerSec_rightForm {
+    width: 100%;
+  }
+
+  .collage_img {
+    top: -5%;
+    max-width: 350px;
+  }
+
+  .threeBoxWelcome h2 {
+    font-size: 30px;
+  }
+
+  .matrimoni_box h3 {
+    font-size: 16px;
+    min-height: 47px;
+  }
+
+  .matrimoni_box {
+    min-height: 286px;
+  }
+
+  .stepSection h2 span {
+    font-size: 22px;
+  }
+
+  .stepSection h2 {
+    font-size: 30px;
+    margin: 0 0 24px 0;
+    line-height: 33px;
+  }
+
+  .planeBox {
+    padding: 0px 22px;
+  }
+
+  .dataSec {
+    font-size: 14px;
+  }
+
+  .innerMain_wraper_dashboard .col-sm-3 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .innerMain_wraper_dashboard .col-sm-9 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .innerMain_wraper_ProfileEdit .portfolio_edit_right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .innerMain_wraper_ProfileEdit .portfolio_edit_left {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .myMembership_wraper .col-sm-3 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .myMembership_wraper .col-sm-9 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .photo_gallery_wraper .col-sm-3 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .photo_gallery_wraper .col-sm-9 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .settings_wraper .col-sm-3 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .settings_wraper .col-sm-9 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .idVerify_wraper .col-sm-3 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .idVerify_wraper .col-sm-9 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .partner_wraper .col-sm-3 {
+    max-width: 100%;
+    width: 100%;
+    flex: inherit;
+  }
+
+  .partner_wraper .col-sm-9 {
+    max-width: 100%;
+    width: 100%;
+    flex: inherit;
+  }
+
+  .partner_wraper .blue_leftSec_custom {
+    margin-bottom: 20px;
+  }
+
+  .blue_leftSec {
+    height: inherit;
+    margin-bottom: 0;
+  }
+
+  .edit_portfolio_field_group_main .form-group .col-sm-3 {
+    max-width: 25%;
+  }
+
+  .rashiChart {
+    max-width: 530px;
+    height: 530px;
+  }
+
+  .title_sec_main {
+    margin-bottom: 10px;
+  }
+
+  .profile_view_Sumary_left {
+    width: 100%;
+  }
+
+  .profile_view_Sumary_right {
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .profile_view_Sumary {
+    display: inline-block;
+  }
+
+  .profile_view_Sumary {
+    padding: 20px 20px 12px 20px;
+  }
+
+  .profile_view_Sumary_left .thum {
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+  }
+
+  .profile_view_Sumary_left .thum img {
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+  }
+
+  .profile_view_Sumary_left .thum_details h3 {
+    font-size: 20px;
+  }
+
+  .profile_view_Sumary_left .thum_details p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+
+  .profile_view_Sumary_right ul li {
+    line-height: 19px;
+    font-size: 14px;
+  }
+
+  .portfolio_view_block .title_sec h2 {
+    font-size: 19px;
+  }
+
+}
+
+/* 767px change to 1024px */
+
+
 
 @media only screen and (max-width:600px) {
 
@@ -1658,7 +1666,7 @@ text-shadow: -1px 1px 2px #240e02;
   }
 
   .portfolio_form_fill_Top .title_sec h2 {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .portfolio_details_block .title_sec h2 button {
@@ -1771,7 +1779,7 @@ text-shadow: -1px 1px 2px #240e02;
   }
 
   .rashiChart .number {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .rashiChart_1 span.number,
@@ -1855,7 +1863,7 @@ text-shadow: -1px 1px 2px #240e02;
   .profile_view_Sumary_left .thum_details p span {
     width: auto;
     padding: 4px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .portfolio_view_block_sub ul.details_list li {
@@ -1885,12 +1893,12 @@ text-shadow: -1px 1px 2px #240e02;
   }
 
   .edit_portfolio_field_group_left {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .edit_portfolio_field_group_right {
     color: #1c2135;
-    font-size: 13px;
+    font-size: 15px;
   }
 
 
@@ -1899,7 +1907,7 @@ text-shadow: -1px 1px 2px #240e02;
 @media only screen and (max-width:360px) {
 
   .personal_sumary_right p a.verifyEmail {
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 0;
     padding: 3px 14px;
     display: inline flow-root list-item;
