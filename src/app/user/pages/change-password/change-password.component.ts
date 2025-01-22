@@ -51,7 +51,6 @@ export class ChangePasswordComponent implements OnInit {
 
     // console.log(this.profile_UserIdGet, 'fff');
     this.currentDate = new Date();
-    console.log( this.currentDate,'currentDate');
     const twentyFourHoursAgoMilliseconds = this.currentDate.getTime() - (24 * 60 * 60 * 1000);
     this.twentyFourHoursAgo = new Date(twentyFourHoursAgoMilliseconds);
     console.log(this.twentyFourHoursAgo,'twentyFourHoursAgo');
@@ -68,9 +67,7 @@ export class ChangePasswordComponent implements OnInit {
       email_id: this.profile_UserIdGet,
       pass: this.passwordForm.controls.new_pass_1.value,
     }
-    console.log(this.passData);
     this.service.global_service(1, '/profile/update_forget_pass',{data: btoa(JSON.stringify(this.passData))}).subscribe((data: any)=>{
-      console.log(data);
     })
     //  console.log(this.passwordForm.controls.new_pass_1.value)
     //  console.log(this.passwordForm.controls.new_pass.value)

@@ -21,7 +21,6 @@ export class SigninGuard implements CanActivate {
       this.router.navigate(['/user/profile_list']);
       
     } 
-    console.log(this.data,'this.data');
        
     return !this.data;
     // return true

@@ -11,7 +11,6 @@ function initMap(): void {
     this.autocomplete = new google.maps.places.Autocomplete(input,{types:['geocode']});
     google.maps.event.addListener(this.autocomplete, 'place_changed', function(){
         var place = this.autocomplete.getPlace()
-        console.log(place.name);
         console.log(place.name, place.geometry.location.lat(), place.geometry.location.lng());
     })
 }

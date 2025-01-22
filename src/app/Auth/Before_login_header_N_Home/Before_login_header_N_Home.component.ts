@@ -208,11 +208,9 @@ export class Before_login_header_N_HomeComponent implements OnInit {
       email_id: this.forgetPass.controls.reg_email.value,   
     }
     this.service.global_service(0, '/profile/check_email', `email_id=${this.forgetPass.controls.reg_email.value}`).subscribe((data:any) => {
-      console.log(data,'email');
       if(data.suc == 2)
       {
         this.service.global_service(1, '/profile/forget_email',this.forgetPassData).subscribe((data: any)=>{
-          console.log(data);
           if(data.suc == 1){
             this.hidebtn = true
             this.linkSent = true
